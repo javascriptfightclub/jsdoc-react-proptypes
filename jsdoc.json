@@ -1,0 +1,24 @@
+{
+  "source": {
+    "include": [ "README.md", "test/src" ],
+    "includePattern": ".+jsx?"
+    },
+    "opts": {
+     "destination": "./test/output",
+     "recurse": true,
+     "template": "lib/template"
+  },
+  "plugins": [
+     "plugins/markdown",
+     "node_modules/jsdoc-babel",
+     "lib/plugin"
+  ],
+  "babel": {
+    "extensions": ["js", "es6", "jsx"],
+    "presets": ["blueflag"],
+    "plugins": ["transform-flow-strip-types"]
+  },
+  "tags": {
+    "allowUnknownTags": true
+  }
+}
