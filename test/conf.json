@@ -6,7 +6,13 @@
     "opts": {
      "destination": "./test/output",
      "recurse": true,
-     "template": "lib/template"
+     "template": "node_modules/jsdonk",
+     "jsdonk": {
+        "output": {
+            "taffyjson": true,
+            "heirarchyjson": true
+        }
+     }
   },
   "plugins": [
      "plugins/markdown",

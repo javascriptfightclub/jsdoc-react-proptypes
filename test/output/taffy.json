@@ -1,0 +1,224 @@
+[
+    {
+        "meta": {
+            "range": [
+                3845,
+                9534
+            ],
+            "filename": "Grid.jsx",
+            "lineno": 66,
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100000858",
+                "name": "Grid",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "longname": "Grid",
+        "examples": [
+            "function Square(props) {\n  return <div className=\"Square\">{props.data}</div>;\n}\n\nfunction TicTacToe(props) {\n  const data = [\n      [\"X\",\" \",\" \"],\n      [\"O\",\"O\",\" \"],\n      [\" \",\"X\",\" \"]\n  ];\n  return <Grid\n      component={Square}\n      data={data}\n      size={40}\n  />;\n}"
+        ],
+        "name": "Grid",
+        "scope": "global",
+        "kind": "component",
+        "___s": true,
+        "___id": "T000002R000098",
+        "description": "<p>A grid of cells. This will create a 2D matrix of <code>Cell</code>s according to the <code>Grid</code>s props.\nInside each <code>Cell</code> an element of type <code>props.component</code> is created.</p>\n<p>Cell components are positioned in the grid more like sprites than DOM elements,\nmeaning that the size of the contents of cells will have no bearing on the placement of adjacent cells.\nThe cell <code>component</code>s themselves can be styled as normal.</p>",
+        "comment": "/**\n * @component\n *\n * A grid of cells. This will create a 2D matrix of `Cell`s according to the `Grid`s props.\n * Inside each `Cell` an element of type `props.component` is created.\n *\n * Cell components are positioned in the grid more like sprites than DOM elements,\n * meaning that the size of the contents of cells will have no bearing on the placement of adjacent cells.\n * The cell `component`s themselves can be styled as normal.\n *\n * @example\n * function Square(props) {\n *   return <div className=\"Square\">{props.data}</div>;\n * }\n *\n * function TicTacToe(props) {\n *   const data = [\n *       [\"X\",\" \",\" \"],\n *       [\"O\",\"O\",\" \"],\n *       [\" \",\"X\",\" \"]\n *   ];\n *   return <Grid\n *       component={Square}\n *       data={data}\n *       size={40}\n *   />;\n * }\n */"
+    },
+    {
+        "meta": {
+            "range": [
+                9691,
+                9789
+            ],
+            "filename": "Grid.jsx",
+            "lineno": 223,
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100001575",
+                "name": "component",
+                "type": "MemberExpression",
+                "value": ".isRequired"
+            }
+        },
+        "longname": "Grid.propTypes.component",
+        "name": "component",
+        "memberof": "Grid.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000187",
+        "description": "<p>A React Component to use within each cell in the grid. Note that it must be a React <code>Component</code>, not a React <code>Element</code>.</p>",
+        "comment": "/** A React Component to use within each cell in the grid. Note that it must be a React `Component`, not a React `Element`. */"
+    },
+    {
+        "meta": {
+            "range": [
+                9877,
+                9931
+            ],
+            "filename": "Grid.jsx",
+            "lineno": 226,
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100001595",
+                "name": "data",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "longname": "Grid.propTypes.data",
+        "name": "data",
+        "memberof": "Grid.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000188",
+        "description": "<p>A 2D array containing data to pass to each cell via their <code>data</code> prop</p>",
+        "comment": "/** A 2D array containing data to pass to each cell via their `data` prop */"
+    },
+    {
+        "meta": {
+            "range": [
+                10183,
+                10357
+            ],
+            "filename": "Grid.jsx",
+            "lineno": 232,
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100001619",
+                "name": "size",
+                "type": "MemberExpression",
+                "value": ".isRequired"
+            }
+        },
+        "longname": "Grid.propTypes.size",
+        "name": "size",
+        "memberof": "Grid.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000191",
+        "description": "<p>Sets the pixel size of cells. Pass a number to set <code>width</code> and <code>height</code> at once, or pass an object with <code>x</code> and <code>y</code> values to set <code>width</code> and <code>height</code> separately.</p>",
+        "comment": "/** Sets the pixel size of cells. Pass a number to set `width` and `height` at once, or pass an object with `x` and `y` values to set `width` and `height` separately. */"
+    },
+    {
+        "meta": {
+            "range": [
+                10400,
+                10434
+            ],
+            "filename": "Grid.jsx",
+            "lineno": 238,
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100001653",
+                "name": "onCellClick",
+                "type": "MemberExpression",
+                "value": "_react.PropTypes.func"
+            }
+        },
+        "longname": "Grid.propTypes.onCellClick",
+        "name": "onCellClick",
+        "memberof": "Grid.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000194",
+        "description": "<p>A function of some sorts</p>",
+        "comment": "/** A function of some sorts */"
+    },
+    {
+        "meta": {
+            "range": [
+                10624,
+                10712
+            ],
+            "filename": "Grid.jsx",
+            "lineno": 241,
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100001659",
+                "name": "cellHitArea",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "longname": "Grid.propTypes.cellHitArea",
+        "name": "cellHitArea",
+        "memberof": "Grid.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000195",
+        "description": "<p>An array of points used to define the shape of the hit area on each cell. Defaults to <code>[[0,0],[1,0],[1,1],[0,1]]</code> which makes the entire surface of each cell is clickable.</p>",
+        "comment": "/** An array of points used to define the shape of the hit area on each cell. Defaults to `[[0,0],[1,0],[1,1],[0,1]]` which makes the entire surface of each cell is clickable. */"
+    },
+    {
+        "meta": {
+            "range": [
+                10860,
+                10975
+            ],
+            "filename": "Grid.jsx",
+            "lineno": 244,
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100001677",
+                "name": "cellHitAreas",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "longname": "Grid.propTypes.cellHitAreas",
+        "name": "cellHitAreas",
+        "memberof": "Grid.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000196",
+        "description": "<p>An array of arrays of points used to define several hit area shapes on each cell. This prop takes precedence over <code>cellHitArea</code>.</p>",
+        "comment": "/**  An array of arrays of points used to define several hit area shapes on each cell. This prop takes precedence over `cellHitArea`. */"
+    },
+    {
+        "meta": {
+            "range": [
+                11077,
+                11115
+            ],
+            "filename": "Grid.jsx",
+            "lineno": 247,
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100001707",
+                "name": "cellClassName",
+                "type": "MemberExpression",
+                "value": "_react.PropTypes.string"
+            }
+        },
+        "longname": "Grid.propTypes.cellClassName",
+        "name": "cellClassName",
+        "memberof": "Grid.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000198",
+        "description": "<p>Class names to apply to the <code>Grid</code>s DOM element</p>",
+        "comment": "/** Class names to apply to the `Grid`s DOM element */"
+    },
+    {
+        "kind": "package",
+        "longname": "package:undefined",
+        "files": [
+            "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src/Cell.jsx",
+            "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src/Grid.jsx",
+            "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src/Typedefs.js",
+            "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src/index.js"
+        ],
+        "___id": "T000002R000213",
+        "___s": true
+    }
+]

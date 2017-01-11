@@ -24,7 +24,7 @@
   "scripts": {
     "ava": "ava",
     "build": "rm -rf lib && babel src --out-dir lib",
-    "build:test": "rm -rf test/lib && babel test/src --out-dir lib",
+    "build:test": "rm -rf test/lib && babel test/src --out-dir lib && jsdoc -c test/conf.json",
     "check-coverage": "nyc check-coverage --branches 0.0  --functions 0.0 --lines 0",
     "dev": "babel src -d lib --watch",
     "docs": "jsdoc -c jsdoc.json",
@@ -96,5 +96,8 @@
     "require": [
       "babel-register"
     ]
+  },
+  "dependencies": {
+    "jsdonk": "^0.3.3"
   }
 }
