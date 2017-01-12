@@ -13,13 +13,20 @@ class ES6Component extends Component {
 }
 
 ES6Component.propTypes = {
-  optionalArray: React.PropTypes.array, /** An array */
-  optionalBool: React.PropTypes.bool, /** A boolean */
-  optionalFunc: React.PropTypes.func, /** A function */
-  optionalNumber: React.PropTypes.number, /** A number */
-  optionalObject: React.PropTypes.object, /** {Map} An object with a jsdoc type */
-  optionalString: React.PropTypes.string, /** A string (with PropTypes... not React.PropTypes...) */
-  optionalSymbol: React.PropTypes.symbol, /** A Symbol */
+  /** An array */
+  optionalArray: React.PropTypes.array,
+  /** A boolean */
+  optionalBool: React.PropTypes.bool,
+  /** A function */
+  optionalFunc: React.PropTypes.func,
+  /** A number */
+  optionalNumber: React.PropTypes.number,
+  /** {Map} An object with a jsdoc type */
+  optionalObject: React.PropTypes.object,
+  /** A string (with PropTypes... not React.PropTypes...) */
+  optionalString: React.PropTypes.string,
+  /** A Symbol */
+  optionalSymbol: React.PropTypes.symbol,
 
   /** Anything that can be rendered: numbers, strings, elements or an array (or fragment) containing these types. */
   optionalNode: React.PropTypes.node,
@@ -66,7 +73,7 @@ ES6Component.propTypes = {
    * object if the validation fails. Don't `console.warn` or throw, as this
    * won't work inside `oneOfType`.
    */
-  customProp: function(props, propName, componentName) { /** heeeeeeeeeeeeellloo */
+  customProp: function(props, propName, componentName) {
     if (!/matchme/.test(props[propName])) {
       return new Error(
         'Invalid prop `' + propName + '` supplied to' +

@@ -27,11 +27,37 @@
     {
         "meta": {
             "range": [
-                2406,
-                2450
+                2358,
+                2404
             ],
             "filename": "ES6Component.jsx",
             "lineno": 52,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100000309",
+                "name": "optionalArray",
+                "type": "MemberExpression",
+                "value": "_react2.default.PropTypes.array"
+            }
+        },
+        "longname": "ES6Component.propTypes.optionalArray",
+        "name": "optionalArray",
+        "memberof": "ES6Component.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000028",
+        "description": "<p>An array</p>",
+        "comment": "/** An array */"
+    },
+    {
+        "meta": {
+            "range": [
+                2427,
+                2471
+            ],
+            "filename": "ES6Component.jsx",
+            "lineno": 54,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000317",
@@ -47,17 +73,17 @@
         "kind": "member",
         "___s": true,
         "___id": "T000002R000029",
-        "description": "<p>An array</p>",
-        "comment": "/** An array */"
+        "description": "<p>A boolean</p>",
+        "comment": "/** A boolean */"
     },
     {
         "meta": {
             "range": [
-                2471,
-                2515
+                2495,
+                2539
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 53,
+            "lineno": 56,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000325",
@@ -73,17 +99,17 @@
         "kind": "member",
         "___s": true,
         "___id": "T000002R000030",
-        "description": "<p>A boolean</p>",
-        "comment": "/** A boolean */"
+        "description": "<p>A function</p>",
+        "comment": "/** A function */"
     },
     {
         "meta": {
             "range": [
-                2537,
-                2585
+                2561,
+                2609
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 54,
+            "lineno": 58,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000333",
@@ -99,17 +125,17 @@
         "kind": "member",
         "___s": true,
         "___id": "T000002R000031",
-        "description": "<p>A function</p>",
-        "comment": "/** A function */"
+        "description": "<p>A number</p>",
+        "comment": "/** A number */"
     },
     {
         "meta": {
             "range": [
-                2605,
-                2653
+                2656,
+                2704
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 55,
+            "lineno": 60,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000341",
@@ -125,17 +151,17 @@
         "kind": "member",
         "___s": true,
         "___id": "T000002R000032",
-        "description": "<p>A number</p>",
-        "comment": "/** A number */"
+        "description": "<p>{Map} An object with a jsdoc type</p>",
+        "comment": "/** {Map} An object with a jsdoc type */"
     },
     {
         "meta": {
             "range": [
-                2698,
-                2746
+                2769,
+                2817
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 56,
+            "lineno": 62,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000349",
@@ -151,17 +177,17 @@
         "kind": "member",
         "___s": true,
         "___id": "T000002R000033",
-        "description": "<p>{Map} An object with a jsdoc type</p>",
-        "comment": "/** {Map} An object with a jsdoc type */"
+        "description": "<p>A string (with PropTypes... not React.PropTypes...)</p>",
+        "comment": "/** A string (with PropTypes... not React.PropTypes...) */"
     },
     {
         "meta": {
             "range": [
-                2809,
-                2857
+                2839,
+                2887
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 57,
+            "lineno": 64,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000357",
@@ -177,17 +203,17 @@
         "kind": "member",
         "___s": true,
         "___id": "T000002R000034",
-        "description": "<p>A string (with PropTypes... not React.PropTypes...)</p>",
-        "comment": "/** A string (with PropTypes... not React.PropTypes...) */"
+        "description": "<p>A Symbol</p>",
+        "comment": "/** A Symbol */"
     },
     {
         "meta": {
             "range": [
-                2995,
-                3039
+                3009,
+                3053
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 60,
+            "lineno": 67,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000365",
@@ -209,11 +235,11 @@
     {
         "meta": {
             "range": [
-                3070,
-                3120
+                3084,
+                3134
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 63,
+            "lineno": 70,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000373",
@@ -235,11 +261,11 @@
     {
         "meta": {
             "range": [
-                3230,
-                3292
+                3244,
+                3306
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 66,
+            "lineno": 73,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000381",
@@ -261,11 +287,11 @@
     {
         "meta": {
             "range": [
-                3393,
-                3458
+                3407,
+                3472
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 69,
+            "lineno": 76,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000391",
@@ -287,11 +313,11 @@
     {
         "meta": {
             "range": [
-                3514,
-                3681
+                3528,
+                3695
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 72,
+            "lineno": 79,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000403",
@@ -313,11 +339,11 @@
     {
         "meta": {
             "range": [
-                3722,
-                3806
+                3736,
+                3820
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 75,
+            "lineno": 82,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000436",
@@ -339,11 +365,11 @@
     {
         "meta": {
             "range": [
-                3869,
-                3955
+                3883,
+                3969
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 78,
+            "lineno": 85,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000452",
@@ -365,11 +391,11 @@
     {
         "meta": {
             "range": [
-                4008,
-                4163
+                4022,
+                4177
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 81,
+            "lineno": 88,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000468",
@@ -391,11 +417,11 @@
     {
         "meta": {
             "range": [
-                4299,
-                4354
+                4313,
+                4368
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 90,
+            "lineno": 97,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000494",
@@ -417,11 +443,11 @@
     {
         "meta": {
             "range": [
-                4393,
-                4446
+                4407,
+                4460
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 93,
+            "lineno": 100,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000504",
@@ -443,11 +469,11 @@
     {
         "meta": {
             "range": [
-                4647,
-                4917
+                4661,
+                4900
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 100,
+            "lineno": 107,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000514",
@@ -469,11 +495,11 @@
     {
         "meta": {
             "range": [
-                5247,
-                5542
+                5230,
+                5525
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 113,
+            "lineno": 119,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000545",
