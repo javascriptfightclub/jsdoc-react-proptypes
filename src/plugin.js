@@ -34,10 +34,21 @@ const defineTags = function(dictionary) {
     });
 };
 
+function isPropTypesNode(node) {
+    return node.type == "ExpressionStatement"
+        && node.expression
+        && node.expression.left
+        && node.expression.left.property
+        && node.expression.left.property.name == "propTypes";
+}
+
+function getPropTypesArray(node) {
+    return node.expression.right.properties;
+}
+
 var lastSourceName;
 var lastComponent;
 var lastPropTypes;
-var lastDoclets = [];
 
 const astNodeVisitor = {
     visitNode: function(node, e, parser, currentSourceName) {
@@ -46,26 +57,39 @@ const astNodeVisitor = {
             lastSourceName = currentSourceName;
             lastComponent = null;
             lastPropTypes = null;
-            lastDoclets = [];
         }
 
-        if(e && e.event == 'symbolFound' && e.comment != '@undocmented') {
-            // when a documented symbol is found
+        // when a documented symbol is found...
+        if(e && e.event == 'symbolFound' && e.comment != '@undocumented') {
+            // if its a @component then remember it
             if(e.comment.indexOf('@component') != -1) {
                 lastComponent = e;
                 lastPropTypes = null;
             }
+
+            // if we've recently found a proptypes node and the current symbol is within the propTypes' range...
+            if(lastPropTypes && node.start > lastPropTypes.start && node.end < lastPropTypes.end) {
+                //console.log(" .... ");
+                //console.log((node && node.key && node.key.name) || "NAAAAAH");
+            }
+
+            console.log(e.comment);
         }
 
-        if(lastComponent
-            && node.type == "ExpressionStatement"
-            && node.expression
-            && node.expression.left
-            && node.expression.left.property
-            && node.expression.left.property.name == "propTypes"
-        ) {
-            console.log(node);
+        if(e && e.event == 'jsdocCommentFound') {
+            console.log(e);
         }
+
+        // if we find a propTypes node following a component, remember it
+        if(lastComponent && isPropTypesNode(node)) {
+            lastPropTypes = {
+                start: node.start,
+                end: node.end,
+                list: getPropTypesArray(node)
+            };
+        }
+
+
 
     /*
             node.expression.right.properties.forEach(function(prop) {

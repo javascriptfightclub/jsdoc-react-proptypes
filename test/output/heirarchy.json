@@ -5,31 +5,28 @@
             {
                 "meta": {
                     "range": [
-                        3845,
-                        9534
+                        1783,
+                        2308
                     ],
-                    "filename": "Grid.jsx",
-                    "lineno": 66,
-                    "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
+                    "filename": "ES6Component.jsx",
+                    "lineno": 27,
+                    "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
                     "code": {
-                        "id": "astnode100000858",
-                        "name": "Grid",
+                        "id": "astnode100000239",
+                        "name": "ES6Component",
                         "type": "CallExpression",
                         "value": ""
                     }
                 },
-                "longname": "Grid",
-                "examples": [
-                    "function Square(props) {\n  return <div className=\"Square\">{props.data}</div>;\n}\n\nfunction TicTacToe(props) {\n  const data = [\n      [\"X\",\" \",\" \"],\n      [\"O\",\"O\",\" \"],\n      [\" \",\"X\",\" \"]\n  ];\n  return <Grid\n      component={Square}\n      data={data}\n      size={40}\n  />;\n}"
-                ],
-                "name": "Grid",
+                "longname": "ES6Component",
+                "name": "ES6Component",
                 "doclets": [],
                 "scope": "global",
                 "kind": "component",
                 "___s": true,
-                "___id": "T000002R000098",
-                "description": "<p>A grid of cells. This will create a 2D matrix of <code>Cell</code>s according to the <code>Grid</code>s props.\nInside each <code>Cell</code> an element of type <code>props.component</code> is created.</p>\n<p>Cell components are positioned in the grid more like sprites than DOM elements,\nmeaning that the size of the contents of cells will have no bearing on the placement of adjacent cells.\nThe cell <code>component</code>s themselves can be styled as normal.</p>",
-                "comment": "/**\n * @component\n *\n * A grid of cells. This will create a 2D matrix of `Cell`s according to the `Grid`s props.\n * Inside each `Cell` an element of type `props.component` is created.\n *\n * Cell components are positioned in the grid more like sprites than DOM elements,\n * meaning that the size of the contents of cells will have no bearing on the placement of adjacent cells.\n * The cell `component`s themselves can be styled as normal.\n *\n * @example\n * function Square(props) {\n *   return <div className=\"Square\">{props.data}</div>;\n * }\n *\n * function TicTacToe(props) {\n *   const data = [\n *       [\"X\",\" \",\" \"],\n *       [\"O\",\"O\",\" \"],\n *       [\" \",\"X\",\" \"]\n *   ];\n *   return <Grid\n *       component={Square}\n *       data={data}\n *       size={40}\n *   />;\n * }\n */"
+                "___id": "T000002R000023",
+                "description": "<p>A component to test stuff out on.</p>",
+                "comment": "/**\n * @component\n *\n * A component to test stuff out on.\n */"
             }
         ]
     }

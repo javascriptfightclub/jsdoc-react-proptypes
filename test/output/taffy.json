@@ -2,223 +2,503 @@
     {
         "meta": {
             "range": [
-                3845,
-                9534
+                1783,
+                2308
             ],
-            "filename": "Grid.jsx",
-            "lineno": 66,
-            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
+            "filename": "ES6Component.jsx",
+            "lineno": 27,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
-                "id": "astnode100000858",
-                "name": "Grid",
+                "id": "astnode100000239",
+                "name": "ES6Component",
                 "type": "CallExpression",
                 "value": ""
             }
         },
-        "longname": "Grid",
-        "examples": [
-            "function Square(props) {\n  return <div className=\"Square\">{props.data}</div>;\n}\n\nfunction TicTacToe(props) {\n  const data = [\n      [\"X\",\" \",\" \"],\n      [\"O\",\"O\",\" \"],\n      [\" \",\"X\",\" \"]\n  ];\n  return <Grid\n      component={Square}\n      data={data}\n      size={40}\n  />;\n}"
-        ],
-        "name": "Grid",
+        "longname": "ES6Component",
+        "name": "ES6Component",
         "scope": "global",
         "kind": "component",
         "___s": true,
-        "___id": "T000002R000098",
-        "description": "<p>A grid of cells. This will create a 2D matrix of <code>Cell</code>s according to the <code>Grid</code>s props.\nInside each <code>Cell</code> an element of type <code>props.component</code> is created.</p>\n<p>Cell components are positioned in the grid more like sprites than DOM elements,\nmeaning that the size of the contents of cells will have no bearing on the placement of adjacent cells.\nThe cell <code>component</code>s themselves can be styled as normal.</p>",
-        "comment": "/**\n * @component\n *\n * A grid of cells. This will create a 2D matrix of `Cell`s according to the `Grid`s props.\n * Inside each `Cell` an element of type `props.component` is created.\n *\n * Cell components are positioned in the grid more like sprites than DOM elements,\n * meaning that the size of the contents of cells will have no bearing on the placement of adjacent cells.\n * The cell `component`s themselves can be styled as normal.\n *\n * @example\n * function Square(props) {\n *   return <div className=\"Square\">{props.data}</div>;\n * }\n *\n * function TicTacToe(props) {\n *   const data = [\n *       [\"X\",\" \",\" \"],\n *       [\"O\",\"O\",\" \"],\n *       [\" \",\"X\",\" \"]\n *   ];\n *   return <Grid\n *       component={Square}\n *       data={data}\n *       size={40}\n *   />;\n * }\n */"
+        "___id": "T000002R000023",
+        "description": "<p>A component to test stuff out on.</p>",
+        "comment": "/**\n * @component\n *\n * A component to test stuff out on.\n */"
     },
     {
         "meta": {
             "range": [
-                9691,
-                9789
+                2406,
+                2450
             ],
-            "filename": "Grid.jsx",
-            "lineno": 223,
-            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
+            "filename": "ES6Component.jsx",
+            "lineno": 52,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
-                "id": "astnode100001575",
-                "name": "component",
+                "id": "astnode100000317",
+                "name": "optionalBool",
                 "type": "MemberExpression",
-                "value": ".isRequired"
+                "value": "_react2.default.PropTypes.bool"
             }
         },
-        "longname": "Grid.propTypes.component",
-        "name": "component",
-        "memberof": "Grid.propTypes",
+        "longname": "ES6Component.propTypes.optionalBool",
+        "name": "optionalBool",
+        "memberof": "ES6Component.propTypes",
         "scope": "static",
         "kind": "member",
         "___s": true,
-        "___id": "T000002R000187",
-        "description": "<p>A React Component to use within each cell in the grid. Note that it must be a React <code>Component</code>, not a React <code>Element</code>.</p>",
-        "comment": "/** A React Component to use within each cell in the grid. Note that it must be a React `Component`, not a React `Element`. */"
+        "___id": "T000002R000029",
+        "description": "<p>An array</p>",
+        "comment": "/** An array */"
     },
     {
         "meta": {
             "range": [
-                9877,
-                9931
+                2471,
+                2515
             ],
-            "filename": "Grid.jsx",
-            "lineno": 226,
-            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
+            "filename": "ES6Component.jsx",
+            "lineno": 53,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
-                "id": "astnode100001595",
-                "name": "data",
+                "id": "astnode100000325",
+                "name": "optionalFunc",
+                "type": "MemberExpression",
+                "value": "_react2.default.PropTypes.func"
+            }
+        },
+        "longname": "ES6Component.propTypes.optionalFunc",
+        "name": "optionalFunc",
+        "memberof": "ES6Component.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000030",
+        "description": "<p>A boolean</p>",
+        "comment": "/** A boolean */"
+    },
+    {
+        "meta": {
+            "range": [
+                2537,
+                2585
+            ],
+            "filename": "ES6Component.jsx",
+            "lineno": 54,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100000333",
+                "name": "optionalNumber",
+                "type": "MemberExpression",
+                "value": "_react2.default.PropTypes.number"
+            }
+        },
+        "longname": "ES6Component.propTypes.optionalNumber",
+        "name": "optionalNumber",
+        "memberof": "ES6Component.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000031",
+        "description": "<p>A function</p>",
+        "comment": "/** A function */"
+    },
+    {
+        "meta": {
+            "range": [
+                2605,
+                2653
+            ],
+            "filename": "ES6Component.jsx",
+            "lineno": 55,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100000341",
+                "name": "optionalObject",
+                "type": "MemberExpression",
+                "value": "_react2.default.PropTypes.object"
+            }
+        },
+        "longname": "ES6Component.propTypes.optionalObject",
+        "name": "optionalObject",
+        "memberof": "ES6Component.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000032",
+        "description": "<p>A number</p>",
+        "comment": "/** A number */"
+    },
+    {
+        "meta": {
+            "range": [
+                2698,
+                2746
+            ],
+            "filename": "ES6Component.jsx",
+            "lineno": 56,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100000349",
+                "name": "optionalString",
+                "type": "MemberExpression",
+                "value": "_react2.default.PropTypes.string"
+            }
+        },
+        "longname": "ES6Component.propTypes.optionalString",
+        "name": "optionalString",
+        "memberof": "ES6Component.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000033",
+        "description": "<p>{Map} An object with a jsdoc type</p>",
+        "comment": "/** {Map} An object with a jsdoc type */"
+    },
+    {
+        "meta": {
+            "range": [
+                2809,
+                2857
+            ],
+            "filename": "ES6Component.jsx",
+            "lineno": 57,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100000357",
+                "name": "optionalSymbol",
+                "type": "MemberExpression",
+                "value": "_react2.default.PropTypes.symbol"
+            }
+        },
+        "longname": "ES6Component.propTypes.optionalSymbol",
+        "name": "optionalSymbol",
+        "memberof": "ES6Component.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000034",
+        "description": "<p>A string (with PropTypes... not React.PropTypes...)</p>",
+        "comment": "/** A string (with PropTypes... not React.PropTypes...) */"
+    },
+    {
+        "meta": {
+            "range": [
+                2995,
+                3039
+            ],
+            "filename": "ES6Component.jsx",
+            "lineno": 60,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100000365",
+                "name": "optionalNode",
+                "type": "MemberExpression",
+                "value": "_react2.default.PropTypes.node"
+            }
+        },
+        "longname": "ES6Component.propTypes.optionalNode",
+        "name": "optionalNode",
+        "memberof": "ES6Component.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000035",
+        "description": "<p>Anything that can be rendered: numbers, strings, elements or an array (or fragment) containing these types.</p>",
+        "comment": "/** Anything that can be rendered: numbers, strings, elements or an array (or fragment) containing these types. */"
+    },
+    {
+        "meta": {
+            "range": [
+                3070,
+                3120
+            ],
+            "filename": "ES6Component.jsx",
+            "lineno": 63,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100000373",
+                "name": "optionalElement",
+                "type": "MemberExpression",
+                "value": "_react2.default.PropTypes.element"
+            }
+        },
+        "longname": "ES6Component.propTypes.optionalElement",
+        "name": "optionalElement",
+        "memberof": "ES6Component.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000036",
+        "description": "<p>A React element.</p>",
+        "comment": "/** A React element. */"
+    },
+    {
+        "meta": {
+            "range": [
+                3230,
+                3292
+            ],
+            "filename": "ES6Component.jsx",
+            "lineno": 66,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100000381",
+                "name": "optionalMessage",
                 "type": "CallExpression",
                 "value": ""
             }
         },
-        "longname": "Grid.propTypes.data",
-        "name": "data",
-        "memberof": "Grid.propTypes",
+        "longname": "ES6Component.propTypes.optionalMessage",
+        "name": "optionalMessage",
+        "memberof": "ES6Component.propTypes",
         "scope": "static",
         "kind": "member",
         "___s": true,
-        "___id": "T000002R000188",
-        "description": "<p>A 2D array containing data to pass to each cell via their <code>data</code> prop</p>",
-        "comment": "/** A 2D array containing data to pass to each cell via their `data` prop */"
+        "___id": "T000002R000037",
+        "description": "<p>You can also declare that a prop is an instance of a class. This uses JS's instanceof operator.</p>",
+        "comment": "/** You can also declare that a prop is an instance of a class. This uses JS's instanceof operator. */"
     },
     {
         "meta": {
             "range": [
-                10183,
-                10357
+                3393,
+                3458
             ],
-            "filename": "Grid.jsx",
-            "lineno": 232,
-            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
+            "filename": "ES6Component.jsx",
+            "lineno": 69,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
-                "id": "astnode100001619",
-                "name": "size",
-                "type": "MemberExpression",
-                "value": ".isRequired"
-            }
-        },
-        "longname": "Grid.propTypes.size",
-        "name": "size",
-        "memberof": "Grid.propTypes",
-        "scope": "static",
-        "kind": "member",
-        "___s": true,
-        "___id": "T000002R000191",
-        "description": "<p>Sets the pixel size of cells. Pass a number to set <code>width</code> and <code>height</code> at once, or pass an object with <code>x</code> and <code>y</code> values to set <code>width</code> and <code>height</code> separately.</p>",
-        "comment": "/** Sets the pixel size of cells. Pass a number to set `width` and `height` at once, or pass an object with `x` and `y` values to set `width` and `height` separately. */"
-    },
-    {
-        "meta": {
-            "range": [
-                10400,
-                10434
-            ],
-            "filename": "Grid.jsx",
-            "lineno": 238,
-            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
-            "code": {
-                "id": "astnode100001653",
-                "name": "onCellClick",
-                "type": "MemberExpression",
-                "value": "_react.PropTypes.func"
-            }
-        },
-        "longname": "Grid.propTypes.onCellClick",
-        "name": "onCellClick",
-        "memberof": "Grid.propTypes",
-        "scope": "static",
-        "kind": "member",
-        "___s": true,
-        "___id": "T000002R000194",
-        "description": "<p>A function of some sorts</p>",
-        "comment": "/** A function of some sorts */"
-    },
-    {
-        "meta": {
-            "range": [
-                10624,
-                10712
-            ],
-            "filename": "Grid.jsx",
-            "lineno": 241,
-            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
-            "code": {
-                "id": "astnode100001659",
-                "name": "cellHitArea",
+                "id": "astnode100000391",
+                "name": "optionalEnum",
                 "type": "CallExpression",
                 "value": ""
             }
         },
-        "longname": "Grid.propTypes.cellHitArea",
-        "name": "cellHitArea",
-        "memberof": "Grid.propTypes",
+        "longname": "ES6Component.propTypes.optionalEnum",
+        "name": "optionalEnum",
+        "memberof": "ES6Component.propTypes",
         "scope": "static",
         "kind": "member",
         "___s": true,
-        "___id": "T000002R000195",
-        "description": "<p>An array of points used to define the shape of the hit area on each cell. Defaults to <code>[[0,0],[1,0],[1,1],[0,1]]</code> which makes the entire surface of each cell is clickable.</p>",
-        "comment": "/** An array of points used to define the shape of the hit area on each cell. Defaults to `[[0,0],[1,0],[1,1],[0,1]]` which makes the entire surface of each cell is clickable. */"
+        "___id": "T000002R000038",
+        "description": "<p>You can ensure that your prop is limited to specific values by treating it as an enum.</p>",
+        "comment": "/** You can ensure that your prop is limited to specific values by treating it as an enum. */"
     },
     {
         "meta": {
             "range": [
-                10860,
-                10975
+                3514,
+                3681
             ],
-            "filename": "Grid.jsx",
-            "lineno": 244,
-            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
+            "filename": "ES6Component.jsx",
+            "lineno": 72,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
-                "id": "astnode100001677",
-                "name": "cellHitAreas",
+                "id": "astnode100000403",
+                "name": "optionalUnion",
                 "type": "CallExpression",
                 "value": ""
             }
         },
-        "longname": "Grid.propTypes.cellHitAreas",
-        "name": "cellHitAreas",
-        "memberof": "Grid.propTypes",
+        "longname": "ES6Component.propTypes.optionalUnion",
+        "name": "optionalUnion",
+        "memberof": "ES6Component.propTypes",
         "scope": "static",
         "kind": "member",
         "___s": true,
-        "___id": "T000002R000196",
-        "description": "<p>An array of arrays of points used to define several hit area shapes on each cell. This prop takes precedence over <code>cellHitArea</code>.</p>",
-        "comment": "/**  An array of arrays of points used to define several hit area shapes on each cell. This prop takes precedence over `cellHitArea`. */"
+        "___id": "T000002R000039",
+        "description": "<p>An object that could be one of many types</p>",
+        "comment": "/** An object that could be one of many types */"
     },
     {
         "meta": {
             "range": [
-                11077,
-                11115
+                3722,
+                3806
             ],
-            "filename": "Grid.jsx",
-            "lineno": 247,
-            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
+            "filename": "ES6Component.jsx",
+            "lineno": 75,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
-                "id": "astnode100001707",
-                "name": "cellClassName",
-                "type": "MemberExpression",
-                "value": "_react.PropTypes.string"
+                "id": "astnode100000436",
+                "name": "optionalArrayOf",
+                "type": "CallExpression",
+                "value": ""
             }
         },
-        "longname": "Grid.propTypes.cellClassName",
-        "name": "cellClassName",
-        "memberof": "Grid.propTypes",
+        "longname": "ES6Component.propTypes.optionalArrayOf",
+        "name": "optionalArrayOf",
+        "memberof": "ES6Component.propTypes",
         "scope": "static",
         "kind": "member",
         "___s": true,
-        "___id": "T000002R000198",
-        "description": "<p>Class names to apply to the <code>Grid</code>s DOM element</p>",
-        "comment": "/** Class names to apply to the `Grid`s DOM element */"
+        "___id": "T000002R000040",
+        "description": "<p>An array of a certain type</p>",
+        "comment": "/** An array of a certain type */"
+    },
+    {
+        "meta": {
+            "range": [
+                3869,
+                3955
+            ],
+            "filename": "ES6Component.jsx",
+            "lineno": 78,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100000452",
+                "name": "optionalObjectOf",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "longname": "ES6Component.propTypes.optionalObjectOf",
+        "name": "optionalObjectOf",
+        "memberof": "ES6Component.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000041",
+        "description": "<p>An object with property values of a certain type</p>",
+        "comment": "/** An object with property values of a certain type */"
+    },
+    {
+        "meta": {
+            "range": [
+                4008,
+                4163
+            ],
+            "filename": "ES6Component.jsx",
+            "lineno": 81,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100000468",
+                "name": "optionalObjectWithShape",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "longname": "ES6Component.propTypes.optionalObjectWithShape",
+        "name": "optionalObjectWithShape",
+        "memberof": "ES6Component.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000042",
+        "description": "<p>An object taking on a particular shape</p>",
+        "comment": "/** An object taking on a particular shape */"
+    },
+    {
+        "meta": {
+            "range": [
+                4299,
+                4354
+            ],
+            "filename": "ES6Component.jsx",
+            "lineno": 90,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100000494",
+                "name": "requiredFunc",
+                "type": "MemberExpression",
+                "value": "_react2.default.PropTypes.func.isRequired"
+            }
+        },
+        "longname": "ES6Component.propTypes.requiredFunc",
+        "name": "requiredFunc",
+        "memberof": "ES6Component.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000045",
+        "description": "<p>You can chain any of the above with <code>isRequired</code> to make sure a warning\nis shown if the prop isn't provided.</p>",
+        "comment": "/**\n   * You can chain any of the above with `isRequired` to make sure a warning\n   * is shown if the prop isn't provided.\n   */"
+    },
+    {
+        "meta": {
+            "range": [
+                4393,
+                4446
+            ],
+            "filename": "ES6Component.jsx",
+            "lineno": 93,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100000504",
+                "name": "requiredAny",
+                "type": "MemberExpression",
+                "value": "_react2.default.PropTypes.any.isRequired"
+            }
+        },
+        "longname": "ES6Component.propTypes.requiredAny",
+        "name": "requiredAny",
+        "memberof": "ES6Component.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000046",
+        "description": "<p>A value of any data type</p>",
+        "comment": "/** A value of any data type */"
+    },
+    {
+        "meta": {
+            "range": [
+                4647,
+                4917
+            ],
+            "filename": "ES6Component.jsx",
+            "lineno": 100,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100000514",
+                "name": "customProp",
+                "type": "FunctionExpression",
+                "value": "customProp"
+            }
+        },
+        "longname": "ES6Component.propTypes.customProp",
+        "name": "customProp",
+        "memberof": "ES6Component.propTypes",
+        "scope": "static",
+        "kind": "function",
+        "___s": true,
+        "___id": "T000002R000047",
+        "description": "<p>You can also specify a custom validator. It should return an Error\nobject if the validation fails. Don't <code>console.warn</code> or throw, as this\nwon't work inside <code>oneOfType</code>.</p>",
+        "comment": "/**\n   * You can also specify a custom validator. It should return an Error\n   * object if the validation fails. Don't `console.warn` or throw, as this\n   * won't work inside `oneOfType`.\n   */"
+    },
+    {
+        "meta": {
+            "range": [
+                5247,
+                5542
+            ],
+            "filename": "ES6Component.jsx",
+            "lineno": 113,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100000545",
+                "name": "customArrayProp",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "longname": "ES6Component.propTypes.customArrayProp",
+        "name": "customArrayProp",
+        "memberof": "ES6Component.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000048",
+        "description": "<p>You can also supply a custom validator to <code>arrayOf</code> and <code>objectOf</code>.\nIt should return an Error object if the validation fails. The validator\nwill be called for each key in the array or object. The first two\narguments of the validator are the array or object itself, and the\ncurrent item's key.</p>",
+        "comment": "/** You can also supply a custom validator to `arrayOf` and `objectOf`.\n   * It should return an Error object if the validation fails. The validator\n   * will be called for each key in the array or object. The first two\n   * arguments of the validator are the array or object itself, and the\n   * current item's key.\n   */"
     },
     {
         "kind": "package",
         "longname": "package:undefined",
         "files": [
-            "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src/Cell.jsx",
-            "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src/Grid.jsx",
-            "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src/Typedefs.js",
-            "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src/index.js"
+            "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src/ES6Component.jsx"
         ],
-        "___id": "T000002R000213",
+        "___id": "T000002R000051",
         "___s": true
     }
 ]

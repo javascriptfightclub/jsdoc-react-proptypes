@@ -1,502 +1,1100 @@
-{
-    "type": "Program",
-    "body": [
+
+"right": {
+    "type": "ObjectExpression",
+    "properties": [
         {
-            "type": "ExpressionStatement",
-            "expression": {
-                "type": "AssignmentExpression",
-                "operator": "=",
-                "left": {
+            "type": "Property",
+            "key": {
+                "type": "Identifier",
+                "name": "optionalArray"
+            },
+            "computed": false,
+            "value": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
                     "type": "MemberExpression",
                     "computed": false,
                     "object": {
                         "type": "Identifier",
-                        "name": "Grid"
+                        "name": "React"
                     },
                     "property": {
                         "type": "Identifier",
-                        "name": "propTypes"
+                        "name": "PropTypes"
                     }
                 },
-                "right": {
-                    "type": "ObjectExpression",
-                    "properties": [
-                        {
-                            "type": "Property",
-                            "key": {
-                                "type": "Identifier",
-                                "name": "component"
+                "property": {
+                    "type": "Identifier",
+                    "name": "array"
+                }
+            },
+            "kind": "init",
+            "method": false,
+            "shorthand": false
+        },
+        {
+            "type": "Property",
+            "key": {
+                "type": "Identifier",
+                "name": "optionalBool"
+            },
+            "computed": false,
+            "value": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "React"
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "PropTypes"
+                    }
+                },
+                "property": {
+                    "type": "Identifier",
+                    "name": "bool"
+                }
+            },
+            "kind": "init",
+            "method": false,
+            "shorthand": false
+        },
+        {
+            "type": "Property",
+            "key": {
+                "type": "Identifier",
+                "name": "optionalFunc"
+            },
+            "computed": false,
+            "value": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "React"
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "PropTypes"
+                    }
+                },
+                "property": {
+                    "type": "Identifier",
+                    "name": "func"
+                }
+            },
+            "kind": "init",
+            "method": false,
+            "shorthand": false
+        },
+        {
+            "type": "Property",
+            "key": {
+                "type": "Identifier",
+                "name": "optionalNumber"
+            },
+            "computed": false,
+            "value": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "React"
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "PropTypes"
+                    }
+                },
+                "property": {
+                    "type": "Identifier",
+                    "name": "number"
+                }
+            },
+            "kind": "init",
+            "method": false,
+            "shorthand": false
+        },
+        {
+            "type": "Property",
+            "key": {
+                "type": "Identifier",
+                "name": "optionalObject"
+            },
+            "computed": false,
+            "value": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "React"
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "PropTypes"
+                    }
+                },
+                "property": {
+                    "type": "Identifier",
+                    "name": "object"
+                }
+            },
+            "kind": "init",
+            "method": false,
+            "shorthand": false
+        },
+        {
+            "type": "Property",
+            "key": {
+                "type": "Identifier",
+                "name": "optionalString"
+            },
+            "computed": false,
+            "value": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "React"
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "PropTypes"
+                    }
+                },
+                "property": {
+                    "type": "Identifier",
+                    "name": "string"
+                }
+            },
+            "kind": "init",
+            "method": false,
+            "shorthand": false
+        },
+        {
+            "type": "Property",
+            "key": {
+                "type": "Identifier",
+                "name": "optionalSymbol"
+            },
+            "computed": false,
+            "value": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "React"
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "PropTypes"
+                    }
+                },
+                "property": {
+                    "type": "Identifier",
+                    "name": "symbol"
+                }
+            },
+            "kind": "init",
+            "method": false,
+            "shorthand": false
+        },
+        {
+            "type": "Property",
+            "key": {
+                "type": "Identifier",
+                "name": "optionalNode"
+            },
+            "computed": false,
+            "value": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "React"
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "PropTypes"
+                    }
+                },
+                "property": {
+                    "type": "Identifier",
+                    "name": "node"
+                }
+            },
+            "kind": "init",
+            "method": false,
+            "shorthand": false
+        },
+        {
+            "type": "Property",
+            "key": {
+                "type": "Identifier",
+                "name": "optionalElement"
+            },
+            "computed": false,
+            "value": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "React"
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "PropTypes"
+                    }
+                },
+                "property": {
+                    "type": "Identifier",
+                    "name": "element"
+                }
+            },
+            "kind": "init",
+            "method": false,
+            "shorthand": false
+        },
+        {
+            "type": "Property",
+            "key": {
+                "type": "Identifier",
+                "name": "optionalMessage"
+            },
+            "computed": false,
+            "value": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "React"
+                        },
+                        "property": {
+                            "type": "Identifier",
+                            "name": "PropTypes"
+                        }
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "instanceOf"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "Message"
+                    }
+                ]
+            },
+            "kind": "init",
+            "method": false,
+            "shorthand": false
+        },
+        {
+            "type": "Property",
+            "key": {
+                "type": "Identifier",
+                "name": "optionalEnum"
+            },
+            "computed": false,
+            "value": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "React"
+                        },
+                        "property": {
+                            "type": "Identifier",
+                            "name": "PropTypes"
+                        }
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "oneOf"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "ArrayExpression",
+                        "elements": [
+                            {
+                                "type": "Literal",
+                                "value": "News",
+                                "raw": "'News'"
                             },
-                            "computed": false,
-                            "value": {
+                            {
+                                "type": "Literal",
+                                "value": "Photos",
+                                "raw": "'Photos'"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "kind": "init",
+            "method": false,
+            "shorthand": false
+        },
+        {
+            "type": "Property",
+            "key": {
+                "type": "Identifier",
+                "name": "optionalUnion"
+            },
+            "computed": false,
+            "value": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "React"
+                        },
+                        "property": {
+                            "type": "Identifier",
+                            "name": "PropTypes"
+                        }
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "oneOfType"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "ArrayExpression",
+                        "elements": [
+                            {
                                 "type": "MemberExpression",
                                 "computed": false,
                                 "object": {
-                                    "type": "CallExpression",
-                                    "callee": {
-                                        "type": "MemberExpression",
-                                        "computed": false,
-                                        "object": {
-                                            "type": "Identifier",
-                                            "name": "PropTypes"
-                                        },
-                                        "property": {
-                                            "type": "Identifier",
-                                            "name": "oneOfType"
-                                        }
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "React"
                                     },
-                                    "arguments": [
-                                        {
-                                            "type": "ArrayExpression",
-                                            "elements": [
-                                                {
-                                                    "type": "MemberExpression",
-                                                    "computed": false,
-                                                    "object": {
-                                                        "type": "Identifier",
-                                                        "name": "PropTypes"
-                                                    },
-                                                    "property": {
-                                                        "type": "Identifier",
-                                                        "name": "object"
-                                                    }
-                                                },
-                                                {
-                                                    "type": "MemberExpression",
-                                                    "computed": false,
-                                                    "object": {
-                                                        "type": "Identifier",
-                                                        "name": "PropTypes"
-                                                    },
-                                                    "property": {
-                                                        "type": "Identifier",
-                                                        "name": "func"
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    ]
+                                    "property": {
+                                        "type": "Identifier",
+                                        "name": "PropTypes"
+                                    }
                                 },
                                 "property": {
                                     "type": "Identifier",
-                                    "name": "isRequired"
+                                    "name": "string"
                                 }
                             },
-                            "kind": "init",
-                            "method": false,
-                            "shorthand": false
-                        },
-                        {
-                            "type": "Property",
-                            "key": {
-                                "type": "Identifier",
-                                "name": "data"
+                            {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "React"
+                                    },
+                                    "property": {
+                                        "type": "Identifier",
+                                        "name": "PropTypes"
+                                    }
+                                },
+                                "property": {
+                                    "type": "Identifier",
+                                    "name": "number"
+                                }
                             },
-                            "computed": false,
-                            "value": {
+                            {
                                 "type": "CallExpression",
                                 "callee": {
                                     "type": "MemberExpression",
                                     "computed": false,
                                     "object": {
-                                        "type": "Identifier",
-                                        "name": "PropTypes"
-                                    },
-                                    "property": {
-                                        "type": "Identifier",
-                                        "name": "arrayOf"
-                                    }
-                                },
-                                "arguments": [
-                                    {
                                         "type": "MemberExpression",
                                         "computed": false,
                                         "object": {
                                             "type": "Identifier",
-                                            "name": "PropTypes"
+                                            "name": "React"
                                         },
                                         "property": {
                                             "type": "Identifier",
-                                            "name": "array"
+                                            "name": "PropTypes"
+                                        }
+                                    },
+                                    "property": {
+                                        "type": "Identifier",
+                                        "name": "instanceOf"
+                                    }
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "Identifier",
+                                        "name": "Message"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "kind": "init",
+            "method": false,
+            "shorthand": false
+        },
+        {
+            "type": "Property",
+            "key": {
+                "type": "Identifier",
+                "name": "optionalArrayOf"
+            },
+            "computed": false,
+            "value": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "React"
+                        },
+                        "property": {
+                            "type": "Identifier",
+                            "name": "PropTypes"
+                        }
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "arrayOf"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "React"
+                            },
+                            "property": {
+                                "type": "Identifier",
+                                "name": "PropTypes"
+                            }
+                        },
+                        "property": {
+                            "type": "Identifier",
+                            "name": "number"
+                        }
+                    }
+                ]
+            },
+            "kind": "init",
+            "method": false,
+            "shorthand": false
+        },
+        {
+            "type": "Property",
+            "key": {
+                "type": "Identifier",
+                "name": "optionalObjectOf"
+            },
+            "computed": false,
+            "value": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "React"
+                        },
+                        "property": {
+                            "type": "Identifier",
+                            "name": "PropTypes"
+                        }
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "objectOf"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "React"
+                            },
+                            "property": {
+                                "type": "Identifier",
+                                "name": "PropTypes"
+                            }
+                        },
+                        "property": {
+                            "type": "Identifier",
+                            "name": "number"
+                        }
+                    }
+                ]
+            },
+            "kind": "init",
+            "method": false,
+            "shorthand": false
+        },
+        {
+            "type": "Property",
+            "key": {
+                "type": "Identifier",
+                "name": "optionalObjectWithShape"
+            },
+            "computed": false,
+            "value": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "React"
+                        },
+                        "property": {
+                            "type": "Identifier",
+                            "name": "PropTypes"
+                        }
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "shape"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "ObjectExpression",
+                        "properties": [
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Identifier",
+                                    "name": "color"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "React"
+                                        },
+                                        "property": {
+                                            "type": "Identifier",
+                                            "name": "PropTypes"
+                                        }
+                                    },
+                                    "property": {
+                                        "type": "Identifier",
+                                        "name": "string"
+                                    }
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": false
+                            },
+                            {
+                                "type": "Property",
+                                "key": {
+                                    "type": "Identifier",
+                                    "name": "fontSize"
+                                },
+                                "computed": false,
+                                "value": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "React"
+                                        },
+                                        "property": {
+                                            "type": "Identifier",
+                                            "name": "PropTypes"
+                                        }
+                                    },
+                                    "property": {
+                                        "type": "Identifier",
+                                        "name": "number"
+                                    }
+                                },
+                                "kind": "init",
+                                "method": false,
+                                "shorthand": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            "kind": "init",
+            "method": false,
+            "shorthand": false
+        },
+        {
+            "type": "Property",
+            "key": {
+                "type": "Identifier",
+                "name": "requiredFunc"
+            },
+            "computed": false,
+            "value": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "React"
+                        },
+                        "property": {
+                            "type": "Identifier",
+                            "name": "PropTypes"
+                        }
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "func"
+                    }
+                },
+                "property": {
+                    "type": "Identifier",
+                    "name": "isRequired"
+                }
+            },
+            "kind": "init",
+            "method": false,
+            "shorthand": false
+        },
+        {
+            "type": "Property",
+            "key": {
+                "type": "Identifier",
+                "name": "requiredAny"
+            },
+            "computed": false,
+            "value": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "React"
+                        },
+                        "property": {
+                            "type": "Identifier",
+                            "name": "PropTypes"
+                        }
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "any"
+                    }
+                },
+                "property": {
+                    "type": "Identifier",
+                    "name": "isRequired"
+                }
+            },
+            "kind": "init",
+            "method": false,
+            "shorthand": false
+        },
+        {
+            "type": "Property",
+            "key": {
+                "type": "Identifier",
+                "name": "customProp"
+            },
+            "computed": false,
+            "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "params": [
+                    {
+                        "type": "Identifier",
+                        "name": "props"
+                    },
+                    {
+                        "type": "Identifier",
+                        "name": "propName"
+                    },
+                    {
+                        "type": "Identifier",
+                        "name": "componentName"
+                    }
+                ],
+                "body": {
+                    "type": "BlockStatement",
+                    "body": [
+                        {
+                            "type": "IfStatement",
+                            "test": {
+                                "type": "UnaryExpression",
+                                "operator": "!",
+                                "argument": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                            "type": "Literal",
+                                            "value": "/matchme/",
+                                            "raw": "/matchme/",
+                                            "regex": {
+                                                "pattern": "matchme",
+                                                "flags": ""
+                                            }
+                                        },
+                                        "property": {
+                                            "type": "Identifier",
+                                            "name": "test"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "props"
+                                            },
+                                            "property": {
+                                                "type": "Identifier",
+                                                "name": "propName"
+                                            }
+                                        }
+                                    ]
+                                },
+                                "prefix": true
+                            },
+                            "consequent": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ReturnStatement",
+                                        "argument": {
+                                            "type": "NewExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "Error"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "BinaryExpression",
+                                                    "operator": "+",
+                                                    "left": {
+                                                        "type": "BinaryExpression",
+                                                        "operator": "+",
+                                                        "left": {
+                                                            "type": "BinaryExpression",
+                                                            "operator": "+",
+                                                            "left": {
+                                                                "type": "BinaryExpression",
+                                                                "operator": "+",
+                                                                "left": {
+                                                                    "type": "BinaryExpression",
+                                                                    "operator": "+",
+                                                                    "left": {
+                                                                        "type": "Literal",
+                                                                        "value": "Invalid prop `",
+                                                                        "raw": "'Invalid prop `'"
+                                                                    },
+                                                                    "right": {
+                                                                        "type": "Identifier",
+                                                                        "name": "propName"
+                                                                    }
+                                                                },
+                                                                "right": {
+                                                                    "type": "Literal",
+                                                                    "value": "` supplied to",
+                                                                    "raw": "'` supplied to'"
+                                                                }
+                                                            },
+                                                            "right": {
+                                                                "type": "Literal",
+                                                                "value": " `",
+                                                                "raw": "' `'"
+                                                            }
+                                                        },
+                                                        "right": {
+                                                            "type": "Identifier",
+                                                            "name": "componentName"
+                                                        }
+                                                    },
+                                                    "right": {
+                                                        "type": "Literal",
+                                                        "value": "`. Validation failed.",
+                                                        "raw": "'`. Validation failed.'"
+                                                    }
+                                                }
+                                            ]
                                         }
                                     }
                                 ]
                             },
-                            "kind": "init",
-                            "method": false,
-                            "shorthand": false
+                            "alternate": null
+                        }
+                    ]
+                },
+                "generator": false,
+                "expression": false
+            },
+            "kind": "init",
+            "method": false,
+            "shorthand": false
+        },
+        {
+            "type": "Property",
+            "key": {
+                "type": "Identifier",
+                "name": "customArrayProp"
+            },
+            "computed": false,
+            "value": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "React"
                         },
-                        {
-                            "type": "Property",
-                            "key": {
+                        "property": {
+                            "type": "Identifier",
+                            "name": "PropTypes"
+                        }
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "arrayOf"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "FunctionExpression",
+                        "id": null,
+                        "params": [
+                            {
                                 "type": "Identifier",
-                                "name": "cols"
+                                "name": "propValue"
                             },
-                            "computed": false,
-                            "value": {
-                                "type": "MemberExpression",
-                                "computed": false,
-                                "object": {
-                                    "type": "Identifier",
-                                    "name": "PropTypes"
-                                },
-                                "property": {
-                                    "type": "Identifier",
-                                    "name": "number"
-                                }
-                            },
-                            "kind": "init",
-                            "method": false,
-                            "shorthand": false
-                        },
-                        {
-                            "type": "Property",
-                            "key": {
+                            {
                                 "type": "Identifier",
-                                "name": "rows"
+                                "name": "key"
                             },
-                            "computed": false,
-                            "value": {
-                                "type": "MemberExpression",
-                                "computed": false,
-                                "object": {
-                                    "type": "Identifier",
-                                    "name": "PropTypes"
-                                },
-                                "property": {
-                                    "type": "Identifier",
-                                    "name": "number"
-                                }
-                            },
-                            "kind": "init",
-                            "method": false,
-                            "shorthand": false
-                        },
-                        {
-                            "type": "Property",
-                            "key": {
+                            {
                                 "type": "Identifier",
-                                "name": "size"
+                                "name": "componentName"
                             },
-                            "computed": false,
-                            "value": {
-                                "type": "MemberExpression",
-                                "computed": false,
-                                "object": {
-                                    "type": "CallExpression",
-                                    "callee": {
-                                        "type": "MemberExpression",
-                                        "computed": false,
-                                        "object": {
-                                            "type": "Identifier",
-                                            "name": "PropTypes"
-                                        },
-                                        "property": {
-                                            "type": "Identifier",
-                                            "name": "oneOfType"
-                                        }
-                                    },
-                                    "arguments": [
-                                        {
-                                            "type": "ArrayExpression",
-                                            "elements": [
-                                                {
-                                                    "type": "MemberExpression",
-                                                    "computed": false,
-                                                    "object": {
-                                                        "type": "Identifier",
-                                                        "name": "PropTypes"
-                                                    },
-                                                    "property": {
-                                                        "type": "Identifier",
-                                                        "name": "number"
-                                                    }
-                                                },
-                                                {
-                                                    "type": "CallExpression",
-                                                    "callee": {
-                                                        "type": "MemberExpression",
-                                                        "computed": false,
-                                                        "object": {
-                                                            "type": "Identifier",
-                                                            "name": "PropTypes"
-                                                        },
-                                                        "property": {
-                                                            "type": "Identifier",
-                                                            "name": "shape"
-                                                        }
-                                                    },
-                                                    "arguments": [
-                                                        {
-                                                            "type": "ObjectExpression",
-                                                            "properties": [
-                                                                {
-                                                                    "type": "Property",
-                                                                    "key": {
-                                                                        "type": "Identifier",
-                                                                        "name": "x"
-                                                                    },
-                                                                    "computed": false,
-                                                                    "value": {
-                                                                        "type": "MemberExpression",
-                                                                        "computed": false,
-                                                                        "object": {
-                                                                            "type": "Identifier",
-                                                                            "name": "PropTypes"
-                                                                        },
-                                                                        "property": {
-                                                                            "type": "Identifier",
-                                                                            "name": "number"
-                                                                        }
-                                                                    },
-                                                                    "kind": "init",
-                                                                    "method": false,
-                                                                    "shorthand": false
-                                                                },
-                                                                {
-                                                                    "type": "Property",
-                                                                    "key": {
-                                                                        "type": "Identifier",
-                                                                        "name": "y"
-                                                                    },
-                                                                    "computed": false,
-                                                                    "value": {
-                                                                        "type": "MemberExpression",
-                                                                        "computed": false,
-                                                                        "object": {
-                                                                            "type": "Identifier",
-                                                                            "name": "PropTypes"
-                                                                        },
-                                                                        "property": {
-                                                                            "type": "Identifier",
-                                                                            "name": "number"
-                                                                        }
-                                                                    },
-                                                                    "kind": "init",
-                                                                    "method": false,
-                                                                    "shorthand": false
-                                                                }
-                                                            ]
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                "property": {
-                                    "type": "Identifier",
-                                    "name": "isRequired"
-                                }
-                            },
-                            "kind": "init",
-                            "method": false,
-                            "shorthand": false
-                        },
-                        {
-                            "type": "Property",
-                            "key": {
+                            {
                                 "type": "Identifier",
-                                "name": "onCellClick"
+                                "name": "location"
                             },
-                            "computed": false,
-                            "value": {
-                                "type": "MemberExpression",
-                                "computed": false,
-                                "object": {
-                                    "type": "Identifier",
-                                    "name": "PropTypes"
-                                },
-                                "property": {
-                                    "type": "Identifier",
-                                    "name": "func"
-                                }
-                            },
-                            "kind": "init",
-                            "method": false,
-                            "shorthand": false
-                        },
-                        {
-                            "type": "Property",
-                            "key": {
+                            {
                                 "type": "Identifier",
-                                "name": "cellHitArea"
-                            },
-                            "computed": false,
-                            "value": {
-                                "type": "CallExpression",
-                                "callee": {
-                                    "type": "MemberExpression",
-                                    "computed": false,
-                                    "object": {
-                                        "type": "Identifier",
-                                        "name": "PropTypes"
-                                    },
-                                    "property": {
-                                        "type": "Identifier",
-                                        "name": "arrayOf"
-                                    }
-                                },
-                                "arguments": [
-                                    {
-                                        "type": "CallExpression",
-                                        "callee": {
-                                            "type": "MemberExpression",
-                                            "computed": false,
-                                            "object": {
-                                                "type": "Identifier",
-                                                "name": "PropTypes"
-                                            },
-                                            "property": {
-                                                "type": "Identifier",
-                                                "name": "arrayOf"
-                                            }
-                                        },
-                                        "arguments": [
-                                            {
+                                "name": "propFullName"
+                            }
+                        ],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "IfStatement",
+                                    "test": {
+                                        "type": "UnaryExpression",
+                                        "operator": "!",
+                                        "argument": {
+                                            "type": "CallExpression",
+                                            "callee": {
                                                 "type": "MemberExpression",
                                                 "computed": false,
                                                 "object": {
-                                                    "type": "Identifier",
-                                                    "name": "PropTypes"
+                                                    "type": "Literal",
+                                                    "value": "/matchme/",
+                                                    "raw": "/matchme/",
+                                                    "regex": {
+                                                        "pattern": "matchme",
+                                                        "flags": ""
+                                                    }
                                                 },
                                                 "property": {
                                                     "type": "Identifier",
-                                                    "name": "number"
+                                                    "name": "test"
                                                 }
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            "kind": "init",
-                            "method": false,
-                            "shorthand": false
-                        },
-                        {
-                            "type": "Property",
-                            "key": {
-                                "type": "Identifier",
-                                "name": "cellHitAreas"
-                            },
-                            "computed": false,
-                            "value": {
-                                "type": "CallExpression",
-                                "callee": {
-                                    "type": "MemberExpression",
-                                    "computed": false,
-                                    "object": {
-                                        "type": "Identifier",
-                                        "name": "PropTypes"
-                                    },
-                                    "property": {
-                                        "type": "Identifier",
-                                        "name": "arrayOf"
-                                    }
-                                },
-                                "arguments": [
-                                    {
-                                        "type": "CallExpression",
-                                        "callee": {
-                                            "type": "MemberExpression",
-                                            "computed": false,
-                                            "object": {
-                                                "type": "Identifier",
-                                                "name": "PropTypes"
                                             },
-                                            "property": {
-                                                "type": "Identifier",
-                                                "name": "arrayOf"
-                                            }
-                                        },
-                                        "arguments": [
-                                            {
-                                                "type": "CallExpression",
-                                                "callee": {
+                                            "arguments": [
+                                                {
                                                     "type": "MemberExpression",
-                                                    "computed": false,
+                                                    "computed": true,
                                                     "object": {
                                                         "type": "Identifier",
-                                                        "name": "PropTypes"
+                                                        "name": "propValue"
                                                     },
                                                     "property": {
                                                         "type": "Identifier",
-                                                        "name": "arrayOf"
+                                                        "name": "key"
                                                     }
-                                                },
-                                                "arguments": [
-                                                    {
-                                                        "type": "MemberExpression",
-                                                        "computed": false,
-                                                        "object": {
-                                                            "type": "Identifier",
-                                                            "name": "PropTypes"
-                                                        },
-                                                        "property": {
-                                                            "type": "Identifier",
-                                                            "name": "number"
+                                                }
+                                            ]
+                                        },
+                                        "prefix": true
+                                    },
+                                    "consequent": {
+                                        "type": "BlockStatement",
+                                        "body": [
+                                            {
+                                                "type": "ReturnStatement",
+                                                "argument": {
+                                                    "type": "NewExpression",
+                                                    "callee": {
+                                                        "type": "Identifier",
+                                                        "name": "Error"
+                                                    },
+                                                    "arguments": [
+                                                        {
+                                                            "type": "BinaryExpression",
+                                                            "operator": "+",
+                                                            "left": {
+                                                                "type": "BinaryExpression",
+                                                                "operator": "+",
+                                                                "left": {
+                                                                    "type": "BinaryExpression",
+                                                                    "operator": "+",
+                                                                    "left": {
+                                                                        "type": "BinaryExpression",
+                                                                        "operator": "+",
+                                                                        "left": {
+                                                                            "type": "BinaryExpression",
+                                                                            "operator": "+",
+                                                                            "left": {
+                                                                                "type": "Literal",
+                                                                                "value": "Invalid prop `",
+                                                                                "raw": "'Invalid prop `'"
+                                                                            },
+                                                                            "right": {
+                                                                                "type": "Identifier",
+                                                                                "name": "propFullName"
+                                                                            }
+                                                                        },
+                                                                        "right": {
+                                                                            "type": "Literal",
+                                                                            "value": "` supplied to",
+                                                                            "raw": "'` supplied to'"
+                                                                        }
+                                                                    },
+                                                                    "right": {
+                                                                        "type": "Literal",
+                                                                        "value": " `",
+                                                                        "raw": "' `'"
+                                                                    }
+                                                                },
+                                                                "right": {
+                                                                    "type": "Identifier",
+                                                                    "name": "componentName"
+                                                                }
+                                                            },
+                                                            "right": {
+                                                                "type": "Literal",
+                                                                "value": "`. Validation failed.",
+                                                                "raw": "'`. Validation failed.'"
+                                                            }
                                                         }
-                                                    }
-                                                ]
+                                                    ]
+                                                }
                                             }
                                         ]
-                                    }
-                                ]
-                            },
-                            "kind": "init",
-                            "method": false,
-                            "shorthand": false
-                        },
-                        {
-                            "type": "Property",
-                            "key": {
-                                "type": "Identifier",
-                                "name": "className"
-                            },
-                            "computed": false,
-                            "value": {
-                                "type": "MemberExpression",
-                                "computed": false,
-                                "object": {
-                                    "type": "Identifier",
-                                    "name": "PropTypes"
-                                },
-                                "property": {
-                                    "type": "Identifier",
-                                    "name": "string"
+                                    },
+                                    "alternate": null
                                 }
-                            },
-                            "kind": "init",
-                            "method": false,
-                            "shorthand": false
+                            ]
                         },
-                        {
-                            "type": "Property",
-                            "key": {
-                                "type": "Identifier",
-                                "name": "cellClassName"
-                            },
-                            "computed": false,
-                            "value": {
-                                "type": "MemberExpression",
-                                "computed": false,
-                                "object": {
-                                    "type": "Identifier",
-                                    "name": "PropTypes"
-                                },
-                                "property": {
-                                    "type": "Identifier",
-                                    "name": "string"
-                                }
-                            },
-                            "kind": "init",
-                            "method": false,
-                            "shorthand": false
-                        }
-                    ]
-                }
-            }
+                        "generator": false,
+                        "expression": false
+                    }
+                ]
+            },
+            "kind": "init",
+            "method": false,
+            "shorthand": false
         }
-    ],
-    "sourceType": "script"
+    ]
 }
