@@ -26,5 +26,8 @@
   },
   "tags": {
     "allowUnknownTags": true
+  },
+  "markdown": {
+    "tags": ["foo", "bar"]
   }
 }

@@ -4,6 +4,8 @@ import React, {Component, PropTypes} from 'react';
  * @component
  *
  * A component to test stuff out on.
+ *
+ * @prop thing Poo `hello`
  */
 
 class ES6Component extends Component {
@@ -19,7 +21,7 @@ ES6Component.propTypes = {
   optionalBool: React.PropTypes.bool,
   /** A function */
   optionalFunc: React.PropTypes.func,
-  /** A number */
+  /** A number (and a `markdown` *comment!*)*/
   optionalNumber: React.PropTypes.number,
   /** {Map} An object with a jsdoc type */
   optionalObject: React.PropTypes.object,

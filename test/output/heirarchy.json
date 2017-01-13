@@ -5,12 +5,12 @@
             {
                 "meta": {
                     "range": [
-                        1783,
-                        2308
+                        1813,
+                        2338
                     ],
                     "filename": "ES6Component.jsx",
-                    "lineno": 27,
-                    "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+                    "lineno": 29,
+                    "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
                     "code": {
                         "id": "astnode100000239",
                         "name": "ES6Component",
@@ -21,12 +21,94 @@
                 "longname": "ES6Component",
                 "name": "ES6Component",
                 "doclets": [],
+                "properties": [
+                    {
+                        "description": "<p>Poo <code>hello</code></p>",
+                        "name": "thing"
+                    },
+                    {
+                        "description": "Fake prop here.",
+                        "name": "fake"
+                    },
+                    {
+                        "description": "Fake prop here.",
+                        "name": "fake"
+                    },
+                    {
+                        "description": "Fake prop here.",
+                        "name": "fake"
+                    },
+                    {
+                        "description": "Fake prop here.",
+                        "name": "fake"
+                    },
+                    {
+                        "description": "Fake prop here.",
+                        "name": "fake"
+                    },
+                    {
+                        "description": "Fake prop here.",
+                        "name": "fake"
+                    },
+                    {
+                        "description": "Fake prop here.",
+                        "name": "fake"
+                    },
+                    {
+                        "description": "Fake prop here.",
+                        "name": "fake"
+                    },
+                    {
+                        "description": "Fake prop here.",
+                        "name": "fake"
+                    },
+                    {
+                        "description": "Fake prop here.",
+                        "name": "fake"
+                    },
+                    {
+                        "description": "Fake prop here.",
+                        "name": "fake"
+                    },
+                    {
+                        "description": "Fake prop here.",
+                        "name": "fake"
+                    },
+                    {
+                        "description": "Fake prop here.",
+                        "name": "fake"
+                    },
+                    {
+                        "description": "Fake prop here.",
+                        "name": "fake"
+                    },
+                    {
+                        "description": "Fake prop here.",
+                        "name": "fake"
+                    },
+                    {
+                        "description": "Fake prop here.",
+                        "name": "fake"
+                    },
+                    {
+                        "description": "Fake prop here.",
+                        "name": "fake"
+                    },
+                    {
+                        "description": "Fake prop here.",
+                        "name": "fake"
+                    },
+                    {
+                        "description": "Fake prop here.",
+                        "name": "fake"
+                    }
+                ],
                 "scope": "global",
                 "kind": "component",
                 "___s": true,
                 "___id": "T000002R000023",
                 "description": "<p>A component to test stuff out on.</p>",
-                "comment": "/**\n * @component\n *\n * A component to test stuff out on.\n */"
+                "comment": "/**\n * @component\n *\n * A component to test stuff out on.\n *\n * @prop thing Poo `hello`\n */"
             }
         ]
     }

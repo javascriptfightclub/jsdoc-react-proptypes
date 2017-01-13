@@ -67,17 +67,31 @@ const astNodeVisitor = {
                 lastPropTypes = null;
             }
 
-            // if we've recently found a proptypes node and the current symbol is within the propTypes' range...
-            if(lastPropTypes && node.start > lastPropTypes.start && node.end < lastPropTypes.end) {
+            // if we've recently found a proptypes node and the current symbol
+            // is within the propTypes' range...
+            if(lastComponent
+                && lastComponent.doclet
+                && lastPropTypes
+                && node.start > lastPropTypes.start
+                && node.end < lastPropTypes.end
+            ) {
                 //console.log(" .... ");
                 //console.log((node && node.key && node.key.name) || "NAAAAAH");
+
+                console.log(e.comment);
+                if(lastComponent.doclet) {
+                    if(!lastComponent.doclet.properties) {
+                        lastComponent.doclet.properties = [];
+                    }
+                    lastComponent.doclet.properties.push({
+                        description: "Fake prop here.",
+                        name: "fake"
+                    });
+                }
             }
 
-            console.log(e.comment);
-        }
 
-        if(e && e.event == 'jsdocCommentFound') {
-            console.log(e);
+            //console.log(lastComponent.doclet.properties);
         }
 
         // if we find a propTypes node following a component, remember it
