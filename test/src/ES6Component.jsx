@@ -1,8 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 
 /**
- * @component
- *
  * A component to test stuff out on.
  *
  * @prop thing Poo `hello`
@@ -30,8 +28,11 @@ ES6Component.propTypes = {
   /** A Symbol */
   optionalSymbol: React.PropTypes.symbol,
 
-  /** Anything that can be rendered: numbers, strings, elements or an array (or fragment) containing these types. */
-  optionalNode: React.PropTypes.node,
+  /**
+   * Anything that can be rendered: numbers, strings, elements or an array (or fragment) containing these types.
+   * Also has a value of `PropTypes.node`, not `React.PropTypes.node`
+   */
+  optionalNode: PropTypes.node,
 
   /** A React element. */
   optionalElement: React.PropTypes.element,
@@ -100,7 +101,9 @@ ES6Component.propTypes = {
   })
 };
 
+/*
 ES6Component.defaultProps = {
 };
+*/
 
 export default ES6Component;

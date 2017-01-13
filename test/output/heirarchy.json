@@ -1,114 +1,25 @@
 {
-    "component": {
-        "heading": "Components",
+    "module": {
+        "heading": "Modules",
         "doclets": [
             {
+                "comment": "/**\n * @module Module\n */",
                 "meta": {
                     "range": [
-                        1813,
-                        2338
+                        1716,
+                        1741
                     ],
-                    "filename": "ES6Component.jsx",
-                    "lineno": 29,
-                    "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
-                    "code": {
-                        "id": "astnode100000239",
-                        "name": "ES6Component",
-                        "type": "CallExpression",
-                        "value": ""
-                    }
+                    "filename": "ModuleComponent.jsx",
+                    "lineno": 21,
+                    "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+                    "code": {}
                 },
-                "longname": "ES6Component",
-                "name": "ES6Component",
-                "doclets": [],
-                "properties": [
-                    {
-                        "description": "<p>Poo <code>hello</code></p>",
-                        "name": "thing"
-                    },
-                    {
-                        "description": "Fake prop here.",
-                        "name": "fake"
-                    },
-                    {
-                        "description": "Fake prop here.",
-                        "name": "fake"
-                    },
-                    {
-                        "description": "Fake prop here.",
-                        "name": "fake"
-                    },
-                    {
-                        "description": "Fake prop here.",
-                        "name": "fake"
-                    },
-                    {
-                        "description": "Fake prop here.",
-                        "name": "fake"
-                    },
-                    {
-                        "description": "Fake prop here.",
-                        "name": "fake"
-                    },
-                    {
-                        "description": "Fake prop here.",
-                        "name": "fake"
-                    },
-                    {
-                        "description": "Fake prop here.",
-                        "name": "fake"
-                    },
-                    {
-                        "description": "Fake prop here.",
-                        "name": "fake"
-                    },
-                    {
-                        "description": "Fake prop here.",
-                        "name": "fake"
-                    },
-                    {
-                        "description": "Fake prop here.",
-                        "name": "fake"
-                    },
-                    {
-                        "description": "Fake prop here.",
-                        "name": "fake"
-                    },
-                    {
-                        "description": "Fake prop here.",
-                        "name": "fake"
-                    },
-                    {
-                        "description": "Fake prop here.",
-                        "name": "fake"
-                    },
-                    {
-                        "description": "Fake prop here.",
-                        "name": "fake"
-                    },
-                    {
-                        "description": "Fake prop here.",
-                        "name": "fake"
-                    },
-                    {
-                        "description": "Fake prop here.",
-                        "name": "fake"
-                    },
-                    {
-                        "description": "Fake prop here.",
-                        "name": "fake"
-                    },
-                    {
-                        "description": "Fake prop here.",
-                        "name": "fake"
-                    }
-                ],
-                "scope": "global",
-                "kind": "component",
+                "kind": "module",
+                "name": "Module",
+                "longname": "module:Module",
+                "___id": "T000002R000059",
                 "___s": true,
-                "___id": "T000002R000023",
-                "description": "<p>A component to test stuff out on.</p>",
-                "comment": "/**\n * @component\n *\n * A component to test stuff out on.\n *\n * @prop thing Poo `hello`\n */"
+                "doclets": []
             }
         ]
     }
