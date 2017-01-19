@@ -25,15 +25,14 @@
     "ava": "ava",
     "build": "rm -rf lib && babel src --out-dir lib",
     "build:test": "rm -rf test/lib && babel test/src --out-dir lib && jsdoc -c test/conf.json",
-    "check-coverage": "nyc check-coverage --branches 0.0  --functions 0.0 --lines 0",
     "dev": "babel src -d lib --watch",
     "docs": "jsdoc -c jsdoc.json",
     "flow": "flow check",
     "lint": "eslint src/**/*.jsx src/**/*.js",
     "lint-fix": "eslint src/**/*.jsx src/**/*.js --fix",
     "prepublish": "npm run build",
-    "test": "nyc --report-dir=./coverage ava && yarn run check-coverage",
-    "test-all": "yarn run lint && yarn run flow && yarn run test"
+    "test": "npm run build:test && ava",
+    "test-all": "npm run lint && npm run flow && npm run test"
   },
   "devDependencies": {
     "app-module-path": "^2.0.0",
@@ -56,7 +55,6 @@
     "jsdoc": "^3.4.3",
     "jsdoc-babel": "^0.3.0",
     "node-sass": "^3.11.2",
-    "nyc": "^6.6.1",
     "react": "^15.3.2",
     "react-addons-test-utils": "^15.0.0",
     "react-dom": "^15.3.2",
@@ -74,30 +72,11 @@
       ]
     },
     "files": [
-      "src/**/*-test.js"
-    ]
-  },
-  "nyc": {
-    "all": true,
-    "include": [
-      "src/**"
-    ],
-    "exclude": [
-      "src/**/*-test.js"
-    ],
-    "reporter": [
-      "lcov",
-      "text-summary"
-    ],
-    "extension": [
-      ".js",
-      ".jsx"
-    ],
-    "require": [
-      "babel-register"
+      "test/test.js"
     ]
   },
   "dependencies": {
+    "immutable": "^3.8.1",
     "jsdonk": "^0.3.3"
   }
 }

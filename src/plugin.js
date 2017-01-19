@@ -1,40 +1,88 @@
-const defineTags = (dictionary) => {
+import ReactDictionary from './dictionaries/react';
 
-    dictionary.defineTag("component", {
-        canHaveType: false,
-        canHaveName: false,
-        onTagged: (doclet, tag) => {
-            doclet.kind = "component";
-            doclet.description = tag.value;
+var dictionaries = []
+    .concat(ReactDictionary);
+
+var astNodeMap = {};
+var docletMap = {};
+
+function docletVarname(doclet) {
+    return doclet.memberof && doclet.memberof.split(".").slice(-1);
+}
+
+function docletParentLongname(doclet) {
+    return doclet.memberof && doclet.memberof.split(".").slice(0, -1);
+}
+
+function parsePropArgs(args) {
+    const {type} = args;
+    if(type == 'ArrayExpression') {
+        /*return args.elements.map(arg => {
+
+        });*/
+    }
+}
+
+function parsePropChain(node, lookFor) {
+    const perNode = (value, chain) => {
+        if(!value) {
+            return;
         }
-    });
 
-    dictionary.defineTag("context", {
-        canHaveType: true,
-        canHaveName: true,
-        mustHaveValue: true,
-        onTagged: (doclet, tag) => {
-            if(!doclet.props) {
-                doclet.props = [];
+        const {callee} = value;
+        if(callee) {
+            var args = [];
+            if(value.arguments && value.arguments[0]) {
+                args = parsePropArgs(value.arguments[0]);
             }
-            doclet.props.push(tag.value);
+            chain.unshift({
+                name: callee && callee.property && callee.property.name,
+                arguments: args
+            });
+
+            perNode(callee, chain);
+            return;
         }
-    });
-};
 
-/*
-function isPropTypesNode(node) {
-    return node.type == "ExpressionStatement"
-        && node.expression
-        && node.expression.left
-        && node.expression.left.property
-        && node.expression.left.property.name == "propTypes";
+        const {
+            property,
+            object,
+            name
+        } = value;
+
+        chain.unshift({
+            name: property && property.name
+        });
+
+        perNode(object, chain);
+    };
+
+    var chain = [];
+    perNode(node.value, chain);
+    return chain;
 }
 
-function getPropTypesArray(node) {
-    return node.expression.right.properties;
+function findDictionaryMatchingChain(propChain, dictionaries) {
+    for(var i = 0; i < dictionaries.length; i++) {
+        var dict = dictionaries[i];
+        for(var j = 0; j < propChain.length; j++) {
+            if(propChain[j].name == dict.name) {
+                return {
+                    dict: dict.dict,
+                    propChain: propChain.slice(j + 1)
+                };
+            }
+        }
+    }
+    return null;
 }
-*/
+
+function processProp(prop, propChain, dict) {
+    for(var i = 0; i < propChain.length; i++) {
+        const {name, args} = propChain[i];
+        dict[name] && dict[name](prop);
+    }
+}
 
 function addPropToComponent(component, prop) {
     if(!component || !component.doclet) {
@@ -46,14 +94,14 @@ function addPropToComponent(component, prop) {
     component.doclet.props.push(prop);
 }
 
-
 const astNodeVisitor = {
     visitNode: (node, e, parser, currentSourceName) => {
-       // if(e && e.event == 'symbolFound' && e.comment != '@undocumented')
+        if(!e || e.comment == '@undocumented' || e.event != 'symbolFound') {
+            return;
+        }
+        astNodeMap[e.id] = node;
     }
 };
-
-var docletMap = {};
 
 const handlers = {
     newDoclet: (e) => {
@@ -63,23 +111,39 @@ const handlers = {
 
         const {doclet} = e;
         docletMap[doclet.longname] = e;
-
-        const parent = doclet.memberof && doclet.memberof.split(".").slice(-1);
-        if(parent == 'propTypes') {
-            const componentLongname = doclet.memberof.split(".").slice(0, -1);
-            var name = doclet.meta && doclet.meta.code && doclet.meta.code.name;
-            var description = doclet.description;
-
-            addPropToComponent(docletMap[componentLongname], {
-                name,
-                description
-            });
+        if(docletVarname(doclet) != 'propTypes') {
+            return;
         }
+
+        // found prop types, start collecting information for the jsdoc prop...
+
+        const name = doclet.meta && doclet.meta.code && doclet.meta.code.name;
+        const description = doclet.description;
+
+        var prop = {
+            name,
+            description,
+            optional: true,
+            type: {
+                names: []
+            }
+        };
+
+        const node = astNodeMap[e.doclet.meta.code.id];
+        const propChain = parsePropChain(node, 'PropTypes');
+
+        // check if the prop chain matches a dictionary we have
+        const res = findDictionaryMatchingChain(propChain, dictionaries);
+        if(!res) {
+            return;
+        }
+
+        processProp(prop, res.propChain, res.dict);
+        addPropToComponent(docletMap[docletParentLongname(doclet)], prop);
     }
 };
 
 export {
-    defineTags,
     astNodeVisitor,
     handlers
 }

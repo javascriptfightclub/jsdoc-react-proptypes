@@ -1,4 +1,4 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
 
 /**
  * A component to test stuff out on.
@@ -21,9 +21,9 @@ ES6Component.propTypes = {
   optionalFunc: React.PropTypes.func,
   /** A number (and a `markdown` *comment!*)*/
   optionalNumber: React.PropTypes.number,
-  /** {Map} An object with a jsdoc type */
+  /** An object with a jsdoc type */
   optionalObject: React.PropTypes.object,
-  /** A string (with PropTypes... not React.PropTypes...) */
+  /** A string */
   optionalString: React.PropTypes.string,
   /** A Symbol */
   optionalSymbol: React.PropTypes.symbol,
@@ -32,7 +32,7 @@ ES6Component.propTypes = {
    * Anything that can be rendered: numbers, strings, elements or an array (or fragment) containing these types.
    * Also has a value of `PropTypes.node`, not `React.PropTypes.node`
    */
-  optionalNode: PropTypes.node,
+  optionalNode: React.PropTypes.node,
 
   /** A React element. */
   optionalElement: React.PropTypes.element,
