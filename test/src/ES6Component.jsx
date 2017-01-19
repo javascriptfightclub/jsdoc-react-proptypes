@@ -19,8 +19,10 @@ ES6Component.propTypes = {
   optionalBool: React.PropTypes.bool,
   /** A function */
   optionalFunc: React.PropTypes.func,
-  /** A number (and a `markdown` *comment!*)*/
+  /** A number */
   optionalNumber: React.PropTypes.number,
+  /** A number (and a `markdown` *comment!*)*/
+  optionalNumberWithMarkdown: React.PropTypes.number,
   /** An object with a jsdoc type */
   optionalObject: React.PropTypes.object,
   /** A string */
@@ -63,18 +65,15 @@ ES6Component.propTypes = {
   }),
 
   /**
-   * You can chain any of the above with `isRequired` to make sure a warning
-   * is shown if the prop isn't provided.
+   * You can chain any of the above with `isRequired` to make sure a warning is shown if the prop isn't provided.
    */
-  requiredFunc: React.PropTypes.func.isRequired,
+  requiredString: React.PropTypes.string.isRequired,
 
   /** A value of any data type */
   requiredAny: React.PropTypes.any.isRequired,
 
   /**
-   * You can also specify a custom validator. It should return an Error
-   * object if the validation fails. Don't `console.warn` or throw, as this
-   * won't work inside `oneOfType`.
+   * You can also specify a custom validator.
    */
   customProp: function(props, propName, componentName) {
     if (!/matchme/.test(props[propName])) {

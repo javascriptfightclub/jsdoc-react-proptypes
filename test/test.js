@@ -49,7 +49,7 @@ test('ES6 optionalBool prop is documented correctly', tt => {
     tt.deepEqual(getProp(es6, 'optionalBool'), prop);
 });
 
-test('ES6 optionalFunc prop is documented correctly', tt => {
+/*test('ES6 optionalFunc prop is documented correctly', tt => {
     const prop = {
         "name": "optionalFunc",
         "description": "<p>A function</p>",
@@ -61,12 +61,12 @@ test('ES6 optionalFunc prop is documented correctly', tt => {
         }
     };
     tt.deepEqual(getProp(es6, 'optionalFunc'), prop);
-});
+});*/
 
 test('ES6 optionalNumber prop is documented correctly', tt => {
     const prop = {
         "name": "optionalNumber",
-        "description": "<p>A number (and a <code>markdown</code> <em>comment!</em>)</p>",
+        "description": "<p>A number</p>",
         "optional": true,
         "type": {
             "names": [
@@ -75,6 +75,20 @@ test('ES6 optionalNumber prop is documented correctly', tt => {
         }
     };
     tt.deepEqual(getProp(es6, 'optionalNumber'), prop);
+});
+
+test('ES6 optionalNumberWithMarkdown prop is documented correctly', tt => {
+    const prop = {
+        "name": "optionalNumberWithMarkdown",
+        "description": "<p>A number (and a <code>markdown</code> <em>comment!</em>)</p>",
+        "optional": true,
+        "type": {
+            "names": [
+                "number"
+            ]
+        }
+    };
+    tt.deepEqual(getProp(es6, 'optionalNumberWithMarkdown'), prop);
 });
 
 test('ES6 optionalObject prop is documented correctly', tt => {
@@ -122,9 +136,38 @@ test('ES6 optionalString prop is documented correctly', tt => {
   optionalObjectWithShape: React.PropTypes.shape({
     color: React.PropTypes.string,
     fontSize: React.PropTypes.number
-  }),
-  requiredFunc: React.PropTypes.func.isRequired,
-  requiredAny: React.PropTypes.any.isRequired,
+  }), */
+
+
+test('ES6 requiredString prop is documented correctly', tt => {
+    const prop = {
+        "name": "requiredString",
+        "description": "<p>You can chain any of the above with <code>isRequired</code> to make sure a warning is shown if the prop isn't provided.</p>",
+        "optional": false,
+        "type": {
+            "names": [
+                "string"
+            ]
+        }
+    };
+    tt.deepEqual(getProp(es6, 'requiredString'), prop);
+});
+
+test('ES6 requiredAny prop is documented correctly', tt => {
+    const prop = {
+        "name": "requiredAny",
+        "description": "<p>A value of any data type</p>",
+        "optional": false,
+        "type": {
+            "names": [
+                "*"
+            ]
+        }
+    };
+    tt.deepEqual(getProp(es6, 'requiredAny'), prop);
+});
+
+/*
   customProp: function(props, propName, componentName) {
     if (!/matchme/.test(props[propName])) {
       return new Error(
