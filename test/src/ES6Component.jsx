@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 
 /**
  * A component to test stuff out on.
- *
- * @prop thing Poo `hello`
  */
 
 class ES6Component extends Component {
@@ -60,8 +58,10 @@ ES6Component.propTypes = {
 
   /** An object taking on a particular shape */
   optionalObjectWithShape: React.PropTypes.shape({
+    /** Shapes can also have documented properties */
     color: React.PropTypes.string,
-    fontSize: React.PropTypes.number
+    /** Like these */
+    fontSize: React.PropTypes.number.isRequired
   }),
 
   /**
@@ -84,13 +84,20 @@ ES6Component.propTypes = {
     }
   },
 
-  /** You can also supply a custom validator to `arrayOf` and `objectOf`.
-   * It should return an Error object if the validation fails. The validator
-   * will be called for each key in the array or object. The first two
-   * arguments of the validator are the array or object itself, and the
-   * current item's key.
+  /** You can also supply a custom validator to `arrayOf`.
    */
   customArrayProp: React.PropTypes.arrayOf(function(propValue, key, componentName, location, propFullName) {
+    if (!/matchme/.test(propValue[key])) {
+      return new Error(
+        'Invalid prop `' + propFullName + '` supplied to' +
+        ' `' + componentName + '`. Validation failed.'
+      );
+    }
+  }),
+
+  /** You can also supply a custom validator to `objectOf`.
+   */
+  customObjectProp: React.PropTypes.objectOf(function(propValue, key, componentName, location, propFullName) {
     if (!/matchme/.test(propValue[key])) {
       return new Error(
         'Invalid prop `' + propFullName + '` supplied to' +

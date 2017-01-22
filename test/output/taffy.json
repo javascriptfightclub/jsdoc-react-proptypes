@@ -2,11 +2,11 @@
     {
         "meta": {
             "range": [
-                275,
-                651
+                245,
+                631
             ],
             "filename": "ES5Component.jsx",
-            "lineno": 14,
+            "lineno": 12,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000031",
@@ -19,8 +19,14 @@
         "name": "ES5Component",
         "properties": [
             {
-                "description": "<p>Poo <code>hello</code></p>",
-                "name": "thing"
+                "optional": true,
+                "type": {
+                    "names": [
+                        "string"
+                    ]
+                },
+                "name": "firstName",
+                "description": "<p>Name string</p>"
             }
         ],
         "scope": "global",
@@ -28,26 +34,26 @@
         "___s": true,
         "___id": "T000002R000006",
         "description": "<p>An ES5 component to test stuff out on.</p>",
-        "comment": "/**\n * An ES5 component to test stuff out on.\n *\n * @prop thing Poo `hello`\n */"
+        "comment": "/**\n * An ES5 component to test stuff out on.\n */"
     },
     {
         "meta": {
             "range": [
-                394,
-                432
+                364,
+                407
             ],
             "filename": "ES5Component.jsx",
-            "lineno": 19,
+            "lineno": 17,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000044",
-                "name": "name",
+                "name": "firstName",
                 "type": "MemberExpression",
                 "value": "_react2.default.PropTypes.string"
             }
         },
-        "longname": "propTypes.name",
-        "name": "name",
+        "longname": "propTypes.firstName",
+        "name": "firstName",
         "memberof": "propTypes",
         "scope": "static",
         "kind": "member",
@@ -59,11 +65,11 @@
     {
         "meta": {
             "range": [
-                1796,
-                2321
+                1766,
+                2291
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 27,
+            "lineno": 25,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000305",
@@ -74,180 +80,229 @@
         },
         "longname": "ES6Component",
         "name": "ES6Component",
-        "props": [
+        "properties": [
             {
-                "name": "optionalArray",
-                "description": "<p>An array</p>",
                 "optional": true,
                 "type": {
                     "names": [
                         "Array"
                     ]
-                }
+                },
+                "name": "optionalArray",
+                "description": "<p>An array</p>"
             },
             {
-                "name": "optionalBool",
-                "description": "<p>A boolean</p>",
                 "optional": true,
                 "type": {
                     "names": [
                         "boolean"
                     ]
-                }
+                },
+                "name": "optionalBool",
+                "description": "<p>A boolean</p>"
             },
             {
-                "name": "optionalFunc",
-                "description": "<p>A function</p>",
                 "optional": true,
                 "type": {
                     "names": []
-                }
+                },
+                "name": "optionalFunc",
+                "description": "<p>A function</p>"
             },
             {
+                "optional": true,
+                "type": {
+                    "names": [
+                        "number"
+                    ]
+                },
                 "name": "optionalNumber",
-                "description": "<p>A number</p>",
+                "description": "<p>A number</p>"
+            },
+            {
                 "optional": true,
                 "type": {
                     "names": [
                         "number"
                     ]
-                }
-            },
-            {
+                },
                 "name": "optionalNumberWithMarkdown",
-                "description": "<p>A number (and a <code>markdown</code> <em>comment!</em>)</p>",
-                "optional": true,
-                "type": {
-                    "names": [
-                        "number"
-                    ]
-                }
+                "description": "<p>A number (and a <code>markdown</code> <em>comment!</em>)</p>"
             },
             {
-                "name": "optionalObject",
-                "description": "<p>An object with a jsdoc type</p>",
                 "optional": true,
                 "type": {
                     "names": [
                         "Object"
                     ]
-                }
+                },
+                "name": "optionalObject",
+                "description": "<p>An object with a jsdoc type</p>"
             },
             {
-                "name": "optionalString",
-                "description": "<p>A string</p>",
                 "optional": true,
                 "type": {
                     "names": [
                         "string"
                     ]
-                }
+                },
+                "name": "optionalString",
+                "description": "<p>A string</p>"
             },
             {
+                "optional": true,
+                "type": {
+                    "names": []
+                },
                 "name": "optionalSymbol",
-                "description": "<p>A Symbol</p>",
+                "description": "<p>A Symbol</p>"
+            },
+            {
                 "optional": true,
                 "type": {
                     "names": []
-                }
-            },
-            {
+                },
                 "name": "optionalNode",
-                "description": "<p>Anything that can be rendered: numbers, strings, elements or an array (or fragment) containing these types.\nAlso has a value of <code>PropTypes.node</code>, not <code>React.PropTypes.node</code></p>",
+                "description": "<p>Anything that can be rendered: numbers, strings, elements or an array (or fragment) containing these types.\nAlso has a value of <code>PropTypes.node</code>, not <code>React.PropTypes.node</code></p>"
+            },
+            {
                 "optional": true,
                 "type": {
                     "names": []
-                }
-            },
-            {
+                },
                 "name": "optionalElement",
-                "description": "<p>A React element.</p>",
-                "optional": true,
-                "type": {
-                    "names": []
-                }
+                "description": "<p>A React element.</p>"
             },
             {
+                "optional": true,
+                "type": {
+                    "names": [
+                        "Message"
+                    ]
+                },
                 "name": "optionalMessage",
-                "description": "<p>You can also declare that a prop is an instance of a class. This uses JS's instanceof operator.</p>",
-                "optional": true,
-                "type": {
-                    "names": []
-                }
+                "description": "<p>You can also declare that a prop is an instance of a class. This uses JS's instanceof operator.</p>"
             },
             {
+                "optional": true,
+                "type": {
+                    "names": [
+                        "'News'",
+                        "'Photos'"
+                    ]
+                },
                 "name": "optionalEnum",
-                "description": "<p>You can ensure that your prop is limited to specific values by treating it as an enum.</p>",
-                "optional": true,
-                "type": {
-                    "names": []
-                }
+                "description": "<p>You can ensure that your prop is limited to specific values by treating it as an enum.</p>"
             },
             {
+                "optional": true,
+                "type": {
+                    "names": [
+                        "string",
+                        "number",
+                        "Message"
+                    ]
+                },
                 "name": "optionalUnion",
-                "description": "<p>An object that could be one of many types</p>",
-                "optional": true,
-                "type": {
-                    "names": []
-                }
+                "description": "<p>An object that could be one of many types</p>"
             },
             {
+                "optional": true,
+                "type": {
+                    "names": [
+                        "Array.<number>"
+                    ]
+                },
                 "name": "optionalArrayOf",
-                "description": "<p>An array of a certain type</p>",
-                "optional": true,
-                "type": {
-                    "names": []
-                }
+                "description": "<p>An array of a certain type</p>"
             },
             {
+                "optional": true,
+                "type": {
+                    "names": [
+                        "Object.<string, number>"
+                    ]
+                },
                 "name": "optionalObjectOf",
-                "description": "<p>An object with property values of a certain type</p>",
-                "optional": true,
-                "type": {
-                    "names": []
-                }
+                "description": "<p>An object with property values of a certain type</p>"
             },
             {
+                "optional": true,
+                "type": {
+                    "names": [
+                        "Object"
+                    ]
+                },
                 "name": "optionalObjectWithShape",
-                "description": "<p>An object taking on a particular shape</p>",
-                "optional": true,
-                "type": {
-                    "names": []
-                }
+                "description": "<p>An object taking on a particular shape</p>"
             },
             {
-                "name": "requiredString",
-                "description": "<p>You can chain any of the above with <code>isRequired</code> to make sure a warning is shown if the prop isn't provided.</p>",
+                "optional": true,
+                "type": {
+                    "names": [
+                        "string"
+                    ]
+                },
+                "name": "optionalObjectWithShape.color",
+                "description": "<p>Shapes can also have documented properties</p>"
+            },
+            {
+                "optional": false,
+                "type": {
+                    "names": [
+                        "number"
+                    ]
+                },
+                "name": "optionalObjectWithShape.fontSize",
+                "description": "<p>Like these</p>"
+            },
+            {
                 "optional": false,
                 "type": {
                     "names": [
                         "string"
                     ]
-                }
+                },
+                "name": "requiredString",
+                "description": "<p>You can chain any of the above with <code>isRequired</code> to make sure a warning is shown if the prop isn't provided.</p>"
             },
             {
-                "name": "requiredAny",
-                "description": "<p>A value of any data type</p>",
                 "optional": false,
                 "type": {
                     "names": [
                         "*"
                     ]
-                }
+                },
+                "name": "requiredAny",
+                "description": "<p>A value of any data type</p>"
             },
             {
-                "name": "customArrayProp",
-                "description": "<p>You can also supply a custom validator to <code>arrayOf</code> and <code>objectOf</code>.\nIt should return an Error object if the validation fails. The validator\nwill be called for each key in the array or object. The first two\narguments of the validator are the array or object itself, and the\ncurrent item's key.</p>",
                 "optional": true,
                 "type": {
                     "names": []
-                }
-            }
-        ],
-        "properties": [
+                },
+                "name": "customProp",
+                "description": "<p>You can also specify a custom validator.</p>"
+            },
             {
-                "description": "<p>Poo <code>hello</code></p>",
-                "name": "thing"
+                "optional": true,
+                "type": {
+                    "names": [
+                        "Array"
+                    ]
+                },
+                "name": "customArrayProp",
+                "description": "<p>You can also supply a custom validator to <code>arrayOf</code>.</p>"
+            },
+            {
+                "optional": true,
+                "type": {
+                    "names": [
+                        "Object"
+                    ]
+                },
+                "name": "customObjectProp",
+                "description": "<p>You can also supply a custom validator to <code>objectOf</code>.</p>"
             }
         ],
         "scope": "global",
@@ -255,16 +310,16 @@
         "___s": true,
         "___id": "T000002R000032",
         "description": "<p>A component to test stuff out on.</p>",
-        "comment": "/**\n * A component to test stuff out on.\n *\n * @prop thing Poo `hello`\n */"
+        "comment": "/**\n * A component to test stuff out on.\n */"
     },
     {
         "meta": {
             "range": [
-                2371,
-                2417
+                2341,
+                2387
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 52,
+            "lineno": 50,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000375",
@@ -286,11 +341,11 @@
     {
         "meta": {
             "range": [
-                2440,
-                2484
+                2410,
+                2454
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 54,
+            "lineno": 52,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000383",
@@ -312,11 +367,11 @@
     {
         "meta": {
             "range": [
-                2508,
-                2552
+                2478,
+                2522
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 56,
+            "lineno": 54,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000391",
@@ -338,11 +393,11 @@
     {
         "meta": {
             "range": [
-                2574,
-                2622
+                2544,
+                2592
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 58,
+            "lineno": 56,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000399",
@@ -364,11 +419,11 @@
     {
         "meta": {
             "range": [
-                2673,
-                2733
+                2643,
+                2703
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 60,
+            "lineno": 58,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000407",
@@ -390,11 +445,11 @@
     {
         "meta": {
             "range": [
-                2774,
-                2822
+                2744,
+                2792
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 62,
+            "lineno": 60,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000415",
@@ -416,11 +471,11 @@
     {
         "meta": {
             "range": [
-                2844,
-                2892
+                2814,
+                2862
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 64,
+            "lineno": 62,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000423",
@@ -442,11 +497,11 @@
     {
         "meta": {
             "range": [
-                2914,
-                2962
+                2884,
+                2932
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 66,
+            "lineno": 64,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000431",
@@ -468,11 +523,11 @@
     {
         "meta": {
             "range": [
-                3162,
-                3206
+                3132,
+                3176
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 72,
+            "lineno": 70,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000439",
@@ -494,11 +549,11 @@
     {
         "meta": {
             "range": [
-                3237,
-                3287
+                3207,
+                3257
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 75,
+            "lineno": 73,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000447",
@@ -520,11 +575,11 @@
     {
         "meta": {
             "range": [
-                3397,
-                3459
+                3367,
+                3429
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 78,
+            "lineno": 76,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000455",
@@ -546,11 +601,11 @@
     {
         "meta": {
             "range": [
-                3560,
-                3625
+                3530,
+                3595
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 81,
+            "lineno": 79,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000465",
@@ -572,11 +627,11 @@
     {
         "meta": {
             "range": [
-                3681,
-                3848
+                3651,
+                3818
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 84,
+            "lineno": 82,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000477",
@@ -598,11 +653,11 @@
     {
         "meta": {
             "range": [
-                3889,
-                3973
+                3859,
+                3943
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 87,
+            "lineno": 85,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000510",
@@ -624,11 +679,11 @@
     {
         "meta": {
             "range": [
-                4036,
-                4122
+                4006,
+                4092
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 90,
+            "lineno": 88,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000526",
@@ -650,11 +705,11 @@
     {
         "meta": {
             "range": [
-                4175,
-                4330
+                4145,
+                4387
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 93,
+            "lineno": 91,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000542",
@@ -676,14 +731,64 @@
     {
         "meta": {
             "range": [
-                4461,
-                4520
+                4262,
+                4301
+            ],
+            "filename": "ES6Component.jsx",
+            "lineno": 93,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100000552",
+                "name": "color",
+                "type": "MemberExpression",
+                "value": "_react2.default.PropTypes.string"
+            }
+        },
+        "longname": "color",
+        "name": "color",
+        "scope": "global",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000053",
+        "description": "<p>Shapes can also have documented properties</p>",
+        "comment": "/** Shapes can also have documented properties */"
+    },
+    {
+        "meta": {
+            "range": [
+                4329,
+                4382
+            ],
+            "filename": "ES6Component.jsx",
+            "lineno": 95,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100000560",
+                "name": "fontSize",
+                "type": "MemberExpression",
+                "value": "_react2.default.PropTypes.number.isRequired"
+            }
+        },
+        "longname": "fontSize",
+        "name": "fontSize",
+        "scope": "global",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000054",
+        "description": "<p>Like these</p>",
+        "comment": "/** Like these */"
+    },
+    {
+        "meta": {
+            "range": [
+                4518,
+                4577
             ],
             "filename": "ES6Component.jsx",
             "lineno": 101,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
-                "id": "astnode100000568",
+                "id": "astnode100000570",
                 "name": "requiredString",
                 "type": "MemberExpression",
                 "value": "_react2.default.PropTypes.string.isRequired"
@@ -702,14 +807,14 @@
     {
         "meta": {
             "range": [
-                4559,
-                4612
+                4616,
+                4669
             ],
             "filename": "ES6Component.jsx",
             "lineno": 104,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
-                "id": "astnode100000578",
+                "id": "astnode100000580",
                 "name": "requiredAny",
                 "type": "MemberExpression",
                 "value": "_react2.default.PropTypes.any.isRequired"
@@ -728,14 +833,14 @@
     {
         "meta": {
             "range": [
-                4675,
-                4914
+                4732,
+                4971
             ],
             "filename": "ES6Component.jsx",
             "lineno": 109,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
-                "id": "astnode100000588",
+                "id": "astnode100000590",
                 "name": "customProp",
                 "type": "FunctionExpression",
                 "value": "customProp"
@@ -754,14 +859,14 @@
     {
         "meta": {
             "range": [
-                5244,
-                5539
+                5041,
+                5336
             ],
             "filename": "ES6Component.jsx",
-            "lineno": 121,
+            "lineno": 117,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
-                "id": "astnode100000619",
+                "id": "astnode100000621",
                 "name": "customArrayProp",
                 "type": "CallExpression",
                 "value": ""
@@ -774,8 +879,34 @@
         "kind": "member",
         "___s": true,
         "___id": "T000002R000058",
-        "description": "<p>You can also supply a custom validator to <code>arrayOf</code> and <code>objectOf</code>.\nIt should return an Error object if the validation fails. The validator\nwill be called for each key in the array or object. The first two\narguments of the validator are the array or object itself, and the\ncurrent item's key.</p>",
-        "comment": "/** You can also supply a custom validator to `arrayOf` and `objectOf`.\n   * It should return an Error object if the validation fails. The validator\n   * will be called for each key in the array or object. The first two\n   * arguments of the validator are the array or object itself, and the\n   * current item's key.\n   */"
+        "description": "<p>You can also supply a custom validator to <code>arrayOf</code>.</p>",
+        "comment": "/** You can also supply a custom validator to `arrayOf`.\n   */"
+    },
+    {
+        "meta": {
+            "range": [
+                5407,
+                5704
+            ],
+            "filename": "ES6Component.jsx",
+            "lineno": 125,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100000661",
+                "name": "customObjectProp",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "longname": "ES6Component.propTypes.customObjectProp",
+        "name": "customObjectProp",
+        "memberof": "ES6Component.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000059",
+        "description": "<p>You can also supply a custom validator to <code>objectOf</code>.</p>",
+        "comment": "/** You can also supply a custom validator to `objectOf`.\n   */"
     },
     {
         "comment": "/**\n * @module Module\n */",
@@ -792,7 +923,7 @@
         "kind": "module",
         "name": "Module",
         "longname": "module:Module",
-        "___id": "T000002R000060",
+        "___id": "T000002R000061",
         "___s": true
     },
     {
@@ -805,7 +936,7 @@
             "lineno": 29,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
-                "id": "astnode100000904",
+                "id": "astnode100000946",
                 "name": "ModuleComponent",
                 "type": "CallExpression",
                 "value": ""
@@ -813,33 +944,33 @@
         },
         "longname": "module:Module~ModuleComponent",
         "name": "ModuleComponent",
-        "props": [
+        "memberof": "module:Module",
+        "properties": [
             {
-                "name": "optionalArray",
-                "description": "<p>An array</p>",
                 "optional": true,
                 "type": {
                     "names": [
                         "Array"
                     ]
-                }
+                },
+                "name": "optionalArray",
+                "description": "<p>An array</p>"
             },
             {
-                "name": "optionalBool",
-                "description": "<p>A boolean</p>",
                 "optional": true,
                 "type": {
                     "names": [
                         "boolean"
                     ]
-                }
+                },
+                "name": "optionalBool",
+                "description": "<p>A boolean</p>"
             }
         ],
-        "memberof": "module:Module",
         "scope": "inner",
         "kind": "member",
         "___s": true,
-        "___id": "T000002R000082",
+        "___id": "T000002R000083",
         "description": "<p>A component to test even more stuff out on.</p>",
         "comment": "/**\n * A component to test even more stuff out on.\n */"
     },
@@ -853,7 +984,7 @@
             "lineno": 54,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
-                "id": "astnode100000974",
+                "id": "astnode100001016",
                 "name": "optionalArray",
                 "type": "MemberExpression",
                 "value": "_react2.default.PropTypes.array"
@@ -865,7 +996,7 @@
         "scope": "static",
         "kind": "member",
         "___s": true,
-        "___id": "T000002R000087",
+        "___id": "T000002R000088",
         "description": "<p>An array</p>",
         "comment": "/** An array */"
     },
@@ -879,7 +1010,7 @@
             "lineno": 56,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
-                "id": "astnode100000982",
+                "id": "astnode100001024",
                 "name": "optionalBool",
                 "type": "MemberExpression",
                 "value": "_react2.default.PropTypes.bool"
@@ -891,7 +1022,7 @@
         "scope": "static",
         "kind": "member",
         "___s": true,
-        "___id": "T000002R000088",
+        "___id": "T000002R000089",
         "description": "<p>A boolean</p>",
         "comment": "/** A boolean */"
     },
@@ -903,7 +1034,7 @@
             "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src/ES6Component.jsx",
             "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src/ModuleComponent.jsx"
         ],
-        "___id": "T000002R000090",
+        "___id": "T000002R000091",
         "___s": true
     }
 ]

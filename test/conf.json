@@ -23,11 +23,5 @@
     "extensions": ["js", "es6", "jsx"],
     "presets": ["blueflag"],
     "plugins": ["transform-flow-strip-types"]
-  },
-  "tags": {
-    "allowUnknownTags": true
-  },
-  "markdown": {
-    "tags": ["foo", "bar"]
   }
 }
