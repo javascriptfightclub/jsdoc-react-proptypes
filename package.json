@@ -1,7 +1,7 @@
 {
   "name": "jsdoc-react-proptypes",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Lets jsdoc parse React propTypes to autocreate prop tags",
   "homepage": "https://github.com/dxinteractive/jsdoc-react-proptypes",
   "repository": {
