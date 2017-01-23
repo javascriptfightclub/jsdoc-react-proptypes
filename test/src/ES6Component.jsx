@@ -28,10 +28,7 @@ ES6Component.propTypes = {
   /** A Symbol */
   optionalSymbol: React.PropTypes.symbol,
 
-  /**
-   * Anything that can be rendered: numbers, strings, elements or an array (or fragment) containing these types.
-   * Also has a value of `PropTypes.node`, not `React.PropTypes.node`
-   */
+  /** Anything that can be rendered. */
   optionalNode: React.PropTypes.node,
 
   /** A React element. */

@@ -22,11 +22,13 @@ const PropTypes = {
         prop.type.names.push('string');
     },
     symbol: (prop) => {
-        //prop.type.names.push('symbol'); // ?
+        prop.type.names.push('Symbol');
     },
     node: (prop) => {
+        prop.type.names.push('ReactNode');
     },
     element: (prop) => {
+        prop.type.names.push('ReactElement');
     },
     instanceOf: (prop, instanceName) => {
         prop.type.names.push(instanceName);
@@ -51,10 +53,10 @@ const PropTypes = {
             prop.type.names.push(`Object.<string, ${type}>`);
         }
     },
-    shape: (prop, args) => {
+    shape: (prop) => {
         prop.type.names.push("Object");
     },
-    isRequired: (prop, args) => {
+    isRequired: (prop) => {
         prop.optional = false;
     }
 };

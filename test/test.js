@@ -115,11 +115,47 @@ test('ES6 optionalString prop is documented correctly', tt => {
     tt.deepEqual(getProp(es6, 'optionalString'), prop);
 });
 
+test('ES6 optionalSymbol prop is documented correctly', tt => {
+    const prop = {
+        name: "optionalSymbol",
+        description: "<p>A Symbol</p>",
+        optional: true,
+        type: {
+            names: [
+                "Symbol"
+            ]
+        }
+    };
+    tt.deepEqual(getProp(es6, 'optionalSymbol'), prop);
+});
 
-/*
-  optionalSymbol: React.PropTypes.symbol,
-  optionalNode: PropTypes.node,
-  optionalElement: React.PropTypes.element,*/
+test('ES6 optionalNode prop is documented correctly', tt => {
+    const prop = {
+        name: "optionalNode",
+        description: "<p>Anything that can be rendered.</p>",
+        optional: true,
+        type: {
+            names: [
+                "ReactNode"
+            ]
+        }
+    };
+    tt.deepEqual(getProp(es6, 'optionalNode'), prop);
+});
+
+test('ES6 optionalElement prop is documented correctly', tt => {
+    const prop = {
+        name: "optionalElement",
+        description: "<p>A React element.</p>",
+        optional: true,
+        type: {
+            names: [
+                "ReactElement"
+            ]
+        }
+    };
+    tt.deepEqual(getProp(es6, 'optionalElement'), prop);
+});
 
 test('ES6 optionalMessage prop is documented correctly', tt => {
     const prop = {
