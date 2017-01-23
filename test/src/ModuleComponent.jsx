@@ -15,8 +15,6 @@ class ModuleComponent extends Component {
 }
 
 ModuleComponent.propTypes = {
-  /** An array */
-  optionalArray: React.PropTypes.array,
   /** A boolean */
   optionalBool: React.PropTypes.bool
 };

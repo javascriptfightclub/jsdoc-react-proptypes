@@ -356,3 +356,21 @@ test('ES5 prop is documented correctly', tt => {
     };
     tt.deepEqual(getProp(es5, 'firstName'), prop);
 });
+
+//
+// Module
+//
+
+test('Prop for component in module is documented correctly', tt => {
+    const prop = {
+        name: "optionalBool",
+        description: "<p>A boolean</p>",
+        optional: true,
+        type: {
+            names: [
+                "boolean"
+            ]
+        }
+    };
+    tt.deepEqual(getProp(mod, 'optionalBool'), prop);
+});

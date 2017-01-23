@@ -929,7 +929,7 @@
         "kind": "module",
         "name": "Module",
         "longname": "module:Module",
-        "___id": "T000002R000061",
+        "___id": "T000002R000063",
         "___s": true
     },
     {
@@ -942,7 +942,7 @@
             "lineno": 29,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
-                "id": "astnode100000946",
+                "id": "astnode100000954",
                 "name": "ModuleComponent",
                 "type": "CallExpression",
                 "value": ""
@@ -952,16 +952,6 @@
         "name": "ModuleComponent",
         "memberof": "module:Module",
         "properties": [
-            {
-                "optional": true,
-                "type": {
-                    "names": [
-                        "Array"
-                    ]
-                },
-                "name": "optionalArray",
-                "description": "<p>An array</p>"
-            },
             {
                 "optional": true,
                 "type": {
@@ -976,44 +966,18 @@
         "scope": "inner",
         "kind": "member",
         "___s": true,
-        "___id": "T000002R000083",
+        "___id": "T000002R000085",
         "description": "<p>A component to test even more stuff out on.</p>",
         "comment": "/**\n * A component to test even more stuff out on.\n */"
     },
     {
         "meta": {
             "range": [
-                2411,
-                2457
+                2412,
+                2456
             ],
             "filename": "ModuleComponent.jsx",
             "lineno": 54,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
-            "code": {
-                "id": "astnode100001016",
-                "name": "optionalArray",
-                "type": "MemberExpression",
-                "value": "_react2.default.PropTypes.array"
-            }
-        },
-        "longname": "module:Module~ModuleComponent.propTypes.optionalArray",
-        "name": "optionalArray",
-        "memberof": "module:Module~ModuleComponent.propTypes",
-        "scope": "static",
-        "kind": "member",
-        "___s": true,
-        "___id": "T000002R000088",
-        "description": "<p>An array</p>",
-        "comment": "/** An array */"
-    },
-    {
-        "meta": {
-            "range": [
-                2480,
-                2524
-            ],
-            "filename": "ModuleComponent.jsx",
-            "lineno": 56,
             "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100001024",
@@ -1028,7 +992,7 @@
         "scope": "static",
         "kind": "member",
         "___s": true,
-        "___id": "T000002R000089",
+        "___id": "T000002R000090",
         "description": "<p>A boolean</p>",
         "comment": "/** A boolean */"
     },
@@ -1040,7 +1004,7 @@
             "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src/ES6Component.jsx",
             "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src/ModuleComponent.jsx"
         ],
-        "___id": "T000002R000091",
+        "___id": "T000002R000092",
         "___s": true
     }
 ]

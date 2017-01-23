@@ -104,9 +104,8 @@ ES6Component.propTypes = {
   })
 };
 
-/*
 ES6Component.defaultProps = {
+    optionalString: "default string"
 };
-*/
 
 export default ES6Component;
