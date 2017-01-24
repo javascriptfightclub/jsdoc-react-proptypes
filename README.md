@@ -4,5 +4,17 @@
 
 Lets jsdoc parse React propTypes to autocreate prop tags.
 
+Add with `npm install jsdoc-react-proptypes --save-dev`, then in your `conf.json` add:
+
+```
+"plugins": [
+   "node_modules/jsdoc-react-proptypes/lib/plugin"
+],
+```
+
+Still adding shit. Next is explicitly overriding inferred types in prop doclets, then extracting default values from defaultProps.
+
+### Dev
+
 `npm run test` to test.
 Bulk of the logic is in `src/plugin`, dev it with `npm run dev`.
