@@ -7,7 +7,7 @@
             ],
             "filename": "ES5Component.jsx",
             "lineno": 12,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000031",
                 "name": "ES5Component",
@@ -44,7 +44,7 @@
             ],
             "filename": "ES5Component.jsx",
             "lineno": 17,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000044",
                 "name": "firstName",
@@ -70,7 +70,7 @@
             ],
             "filename": "ES6Component.jsx",
             "lineno": 25,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000305",
                 "name": "ES6Component",
@@ -137,7 +137,7 @@
                     ]
                 },
                 "name": "optionalObject",
-                "description": "<p>An object with a jsdoc type</p>"
+                "description": "<p>An object</p>"
             },
             {
                 "optional": true,
@@ -309,6 +309,16 @@
                 },
                 "name": "customObjectProp",
                 "description": "<p>You can also supply a custom validator to <code>objectOf</code>.</p>"
+            },
+            {
+                "optional": true,
+                "type": {
+                    "names": [
+                        "CustomType"
+                    ]
+                },
+                "name": "customJsdocType",
+                "description": "<p>ES6 customJsdocType prop is documented correctly</p>"
             }
         ],
         "scope": "global",
@@ -326,7 +336,7 @@
             ],
             "filename": "ES6Component.jsx",
             "lineno": 50,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000375",
                 "name": "optionalArray",
@@ -352,7 +362,7 @@
             ],
             "filename": "ES6Component.jsx",
             "lineno": 52,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000383",
                 "name": "optionalBool",
@@ -378,7 +388,7 @@
             ],
             "filename": "ES6Component.jsx",
             "lineno": 54,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000391",
                 "name": "optionalFunc",
@@ -404,7 +414,7 @@
             ],
             "filename": "ES6Component.jsx",
             "lineno": 56,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000399",
                 "name": "optionalNumber",
@@ -430,7 +440,7 @@
             ],
             "filename": "ES6Component.jsx",
             "lineno": 58,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000407",
                 "name": "optionalNumberWithMarkdown",
@@ -451,12 +461,12 @@
     {
         "meta": {
             "range": [
-                2744,
-                2792
+                2726,
+                2774
             ],
             "filename": "ES6Component.jsx",
             "lineno": 60,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000415",
                 "name": "optionalObject",
@@ -471,18 +481,18 @@
         "kind": "member",
         "___s": true,
         "___id": "T000002R000042",
-        "description": "<p>An object with a jsdoc type</p>",
-        "comment": "/** An object with a jsdoc type */"
+        "description": "<p>An object</p>",
+        "comment": "/** An object */"
     },
     {
         "meta": {
             "range": [
-                2814,
-                2862
+                2796,
+                2844
             ],
             "filename": "ES6Component.jsx",
             "lineno": 62,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000423",
                 "name": "optionalString",
@@ -503,12 +513,12 @@
     {
         "meta": {
             "range": [
-                2884,
-                2932
+                2866,
+                2914
             ],
             "filename": "ES6Component.jsx",
             "lineno": 64,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000431",
                 "name": "optionalSymbol",
@@ -529,12 +539,12 @@
     {
         "meta": {
             "range": [
-                2977,
-                3021
+                2959,
+                3003
             ],
             "filename": "ES6Component.jsx",
             "lineno": 67,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000439",
                 "name": "optionalNode",
@@ -555,12 +565,12 @@
     {
         "meta": {
             "range": [
-                3052,
-                3102
+                3034,
+                3084
             ],
             "filename": "ES6Component.jsx",
             "lineno": 70,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000447",
                 "name": "optionalElement",
@@ -581,12 +591,12 @@
     {
         "meta": {
             "range": [
-                3212,
-                3274
+                3194,
+                3256
             ],
             "filename": "ES6Component.jsx",
             "lineno": 73,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000455",
                 "name": "optionalMessage",
@@ -607,12 +617,12 @@
     {
         "meta": {
             "range": [
-                3375,
-                3440
+                3357,
+                3422
             ],
             "filename": "ES6Component.jsx",
             "lineno": 76,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000465",
                 "name": "optionalEnum",
@@ -633,12 +643,12 @@
     {
         "meta": {
             "range": [
-                3496,
-                3663
+                3478,
+                3645
             ],
             "filename": "ES6Component.jsx",
             "lineno": 79,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000477",
                 "name": "optionalUnion",
@@ -659,12 +669,12 @@
     {
         "meta": {
             "range": [
-                3704,
-                3788
+                3686,
+                3770
             ],
             "filename": "ES6Component.jsx",
             "lineno": 82,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000510",
                 "name": "optionalArrayOf",
@@ -685,12 +695,12 @@
     {
         "meta": {
             "range": [
-                3851,
-                3937
+                3833,
+                3919
             ],
             "filename": "ES6Component.jsx",
             "lineno": 85,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000526",
                 "name": "optionalObjectOf",
@@ -711,12 +721,12 @@
     {
         "meta": {
             "range": [
-                3990,
-                4232
+                3972,
+                4214
             ],
             "filename": "ES6Component.jsx",
             "lineno": 88,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000542",
                 "name": "optionalObjectWithShape",
@@ -737,12 +747,12 @@
     {
         "meta": {
             "range": [
-                4107,
-                4146
+                4089,
+                4128
             ],
             "filename": "ES6Component.jsx",
             "lineno": 90,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000552",
                 "name": "color",
@@ -762,12 +772,12 @@
     {
         "meta": {
             "range": [
-                4174,
-                4227
+                4156,
+                4209
             ],
             "filename": "ES6Component.jsx",
             "lineno": 92,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000560",
                 "name": "fontSize",
@@ -787,12 +797,12 @@
     {
         "meta": {
             "range": [
-                4363,
-                4422
+                4345,
+                4404
             ],
             "filename": "ES6Component.jsx",
             "lineno": 98,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000570",
                 "name": "requiredString",
@@ -813,12 +823,12 @@
     {
         "meta": {
             "range": [
-                4461,
-                4514
+                4443,
+                4496
             ],
             "filename": "ES6Component.jsx",
             "lineno": 101,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000580",
                 "name": "requiredAny",
@@ -839,12 +849,12 @@
     {
         "meta": {
             "range": [
-                4577,
-                4816
+                4559,
+                4798
             ],
             "filename": "ES6Component.jsx",
             "lineno": 106,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000590",
                 "name": "customProp",
@@ -865,12 +875,12 @@
     {
         "meta": {
             "range": [
-                4886,
-                5181
+                4868,
+                5163
             ],
             "filename": "ES6Component.jsx",
             "lineno": 114,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000621",
                 "name": "customArrayProp",
@@ -891,12 +901,12 @@
     {
         "meta": {
             "range": [
-                5252,
-                5549
+                5234,
+                5531
             ],
             "filename": "ES6Component.jsx",
             "lineno": 122,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
                 "id": "astnode100000661",
                 "name": "customObjectProp",
@@ -915,6 +925,32 @@
         "comment": "/** You can also supply a custom validator to `objectOf`.\n   */"
     },
     {
+        "meta": {
+            "range": [
+                5607,
+                5656
+            ],
+            "filename": "ES6Component.jsx",
+            "lineno": 129,
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100000701",
+                "name": "customJsdocType",
+                "type": "MemberExpression",
+                "value": "_react2.default.PropTypes.object"
+            }
+        },
+        "longname": "ES6Component.propTypes.customJsdocType",
+        "name": "customJsdocType",
+        "memberof": "ES6Component.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000060",
+        "description": "<p>{CustomType} ES6 customJsdocType prop is documented correctly</p>",
+        "comment": "/** {CustomType} ES6 customJsdocType prop is documented correctly */"
+    },
+    {
         "comment": "/**\n * @module Module\n */",
         "meta": {
             "range": [
@@ -923,13 +959,13 @@
             ],
             "filename": "ModuleComponent.jsx",
             "lineno": 21,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {}
         },
         "kind": "module",
         "name": "Module",
         "longname": "module:Module",
-        "___id": "T000002R000063",
+        "___id": "T000002R000064",
         "___s": true
     },
     {
@@ -940,9 +976,9 @@
             ],
             "filename": "ModuleComponent.jsx",
             "lineno": 29,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
-                "id": "astnode100000954",
+                "id": "astnode100000962",
                 "name": "ModuleComponent",
                 "type": "CallExpression",
                 "value": ""
@@ -966,7 +1002,7 @@
         "scope": "inner",
         "kind": "member",
         "___s": true,
-        "___id": "T000002R000085",
+        "___id": "T000002R000086",
         "description": "<p>A component to test even more stuff out on.</p>",
         "comment": "/**\n * A component to test even more stuff out on.\n */"
     },
@@ -978,9 +1014,9 @@
             ],
             "filename": "ModuleComponent.jsx",
             "lineno": 54,
-            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
             "code": {
-                "id": "astnode100001024",
+                "id": "astnode100001032",
                 "name": "optionalBool",
                 "type": "MemberExpression",
                 "value": "_react2.default.PropTypes.bool"
@@ -992,7 +1028,7 @@
         "scope": "static",
         "kind": "member",
         "___s": true,
-        "___id": "T000002R000090",
+        "___id": "T000002R000091",
         "description": "<p>A boolean</p>",
         "comment": "/** A boolean */"
     },
@@ -1000,11 +1036,11 @@
         "kind": "package",
         "longname": "package:undefined",
         "files": [
-            "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src/ES5Component.jsx",
-            "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src/ES6Component.jsx",
-            "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src/ModuleComponent.jsx"
+            "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src/ES5Component.jsx",
+            "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src/ES6Component.jsx",
+            "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src/ModuleComponent.jsx"
         ],
-        "___id": "T000002R000092",
+        "___id": "T000002R000093",
         "___s": true
     }
 ]

@@ -21,7 +21,7 @@ ES6Component.propTypes = {
   optionalNumber: React.PropTypes.number,
   /** A number (and a `markdown` *comment!*)*/
   optionalNumberWithMarkdown: React.PropTypes.number,
-  /** An object with a jsdoc type */
+  /** An object */
   optionalObject: React.PropTypes.object,
   /** A string */
   optionalString: React.PropTypes.string,
@@ -101,7 +101,10 @@ ES6Component.propTypes = {
         ' `' + componentName + '`. Validation failed.'
       );
     }
-  })
+  }),
+
+  /** {CustomType} ES6 customJsdocType prop is documented correctly */
+  customJsdocType: React.PropTypes.object
 };
 
 ES6Component.defaultProps = {

@@ -90,7 +90,7 @@ test('ES6 optionalNumberWithMarkdown prop is documented correctly', tt => {
 test('ES6 optionalObject prop is documented correctly', tt => {
     const prop = {
         name: "optionalObject",
-        description: "<p>An object with a jsdoc type</p>",
+        description: "<p>An object</p>",
         optional: true,
         type: {
             names: [
@@ -337,6 +337,20 @@ test('ES6 customObjectProp prop is documented correctly', tt => {
         }
     };
     tt.deepEqual(getProp(es6, 'customObjectProp'), prop);
+});
+
+test('ES6 customJsdocType prop is documented correctly', tt => {
+    const prop = {
+        name: "customJsdocType",
+        description: "<p>ES6 customJsdocType prop is documented correctly</p>",
+        optional: true,
+        type: {
+            names: [
+                "CustomType"
+            ]
+        }
+    };
+    tt.deepEqual(getProp(es6, 'customJsdocType'), prop);
 });
 
 //

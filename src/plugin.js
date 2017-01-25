@@ -21,14 +21,14 @@ function kindOfParentNameThingIGuess(doclet) {
     return doclet.memberof && doclet.memberof.split(".").slice(0, -1);
 }
 
-function parseArgmuents(aaaarrrrrrgh) {
-    const {type} = aaaarrrrrrgh;
+function parseArgmuents(aaargh) {
+    const {type} = aaargh;
     // dont
     if(type == 'Identifier') {
-        return aaaarrrrrrgh.name;
+        return aaargh.name;
     }
     if(type == 'ArrayExpression') {
-        return aaaarrrrrrgh.elements.map(node => {
+        return aaargh.elements.map(node => {
             if(node.type == 'Literal') {
                 return node.value;
             }
@@ -36,11 +36,25 @@ function parseArgmuents(aaaarrrrrrgh) {
         });
     }
     if(type == 'MemberExpression') {
-        return getPropForNode({value:aaaarrrrrrgh}).type.names[0];
+        return getPropForNode({value:aaargh}).type.names[0];
     }
     if(type == 'ObjectExpression') {
-        return getPropForNode({value:aaaarrrrrrgh}).type.names[0];
+        return getPropForNode({value:aaargh}).type.names[0];
     }
+}
+
+function parseThatDescription(description) {
+    const type = description.match(/\s*{(.+?)}\s*/);
+    if(!type) {
+        return {
+            description
+        };
+    }
+    const types = type[1].split('|');
+    return {
+        types,
+        description: description.replace(type[0], '').trim()
+    };
 }
 
 function mildPropChainParsing(node, lookFor) {
@@ -178,10 +192,18 @@ const handlers = {
             // found prop types, start collecting information for the jsdoc prop...
             const name = doclet.meta && doclet.meta.code && doclet.meta.code.name;
             //console.log(">>>>>>>>>>", name);
-            const description = doclet.description;
+
+            const {
+                description,
+                types
+            } = parseThatDescription(doclet.description);
+
             const prop = getPropForNode(node, {name, description});
 
             if(prop) {
+                if(types) {
+                    prop.type.names = types;
+                }
                 // jsdoc loses the plot with ES5, manually remember the last time we saw one
                 // and if this new doclet is in the range of that last es5 class
                 // then add the prop to it
