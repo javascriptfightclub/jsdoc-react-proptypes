@@ -104,7 +104,13 @@ ES6Component.propTypes = {
   }),
 
   /** {CustomType} ES6 customJsdocType prop is documented correctly */
-  customJsdocType: React.PropTypes.object
+  customJsdocType: React.PropTypes.object,
+
+  /** {CustomType} [="bananas"] ES6 customJsdocTypeWithDefault prop is documented correctly with a default value from the doclet */
+  customJsdocTypeWithDefault: React.PropTypes.object,
+
+  /** [=23] ES6 customJsdocTypeWithDefault2 prop is documented correctly with a default value from the doclet and no doclet type. */
+  customJsdocTypeWithDefault2: React.PropTypes.number
 };
 
 ES6Component.defaultProps = {

@@ -44,17 +44,31 @@ function parseArgmuents(aaargh) {
 }
 
 function parseThatDescription(description) {
-    const type = description.match(/\s*{(.+?)}\s*/);
-    if(!type) {
+    var output = {description};
+
+    const matches = description.match(/\s*{(.+?)}\s*(\[=(.+?)\])?\s*/);
+    if(!matches) {
         return {
             description
         };
     }
-    const types = type[1].split('|');
-    return {
-        types,
-        description: description.replace(type[0], '').trim()
+
+    const types = matches[1];
+    const defaultvalue = matches[3];
+
+    var output = {
+        description: output.description.replace(matches[0], '').trim()
     };
+
+    if(types) {
+        output.types = types.split('|').map(ii => ii.trim());
+    }
+
+    if(defaultvalue) {
+        output.defaultvalue = defaultvalue;
+    }
+
+    return output;
 }
 
 function mildPropChainParsing(node, lookFor) {
@@ -195,7 +209,8 @@ const handlers = {
 
             const {
                 description,
-                types
+                types,
+                defaultvalue
             } = parseThatDescription(doclet.description);
 
             const prop = getPropForNode(node, {name, description});
@@ -204,6 +219,10 @@ const handlers = {
                 if(types) {
                     prop.type.names = types;
                 }
+                if(defaultvalue) {
+                    prop.defaultvalue = defaultvalue;
+                }
+
                 // jsdoc loses the plot with ES5, manually remember the last time we saw one
                 // and if this new doclet is in the range of that last es5 class
                 // then add the prop to it

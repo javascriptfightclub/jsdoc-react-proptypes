@@ -350,7 +350,40 @@ test('ES6 customJsdocType prop is documented correctly', tt => {
             ]
         }
     };
+
     tt.deepEqual(getProp(es6, 'customJsdocType'), prop);
+});
+
+test('ES6 customJsdocTypeWithDefault prop is documented correctly', tt => {
+    const prop = {
+        name: "customJsdocTypeWithDefault",
+        description: "<p>ES6 customJsdocTypeWithDefault prop is documented correctly with a default value from the doclet</p>",
+        optional: true,
+        type: {
+            names: [
+                "CustomType"
+            ]
+        },
+        defaultvalue: "&quot;bananas&quot;"
+    };
+
+    tt.deepEqual(getProp(es6, 'customJsdocTypeWithDefault'), prop);
+});
+
+test('ES6 customJsdocTypeWithDefault2 prop is documented correctly', tt => {
+    const prop = {
+        name: "customJsdocTypeWithDefault2",
+        description: "<p>ES6 customJsdocTypeWithDefault2 prop is documented correctly with a default value from the doclet and no doclet type.</p>",
+        optional: true,
+        type: {
+            names: [
+                "number"
+            ]
+        },
+        defaultvalue: "23"
+    };
+
+    tt.deepEqual(getProp(es6, 'customJsdocTypeWithDefault2'), prop);
 });
 
 //
