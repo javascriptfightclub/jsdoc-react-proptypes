@@ -46,26 +46,16 @@ function parseArgmuents(aaargh) {
 function parseThatDescription(description) {
     var output = {description};
 
-    const matches = description.match(/\s*{(.+?)}\s*(\[=(.+?)\])?\s*/);
-    if(!matches) {
-        return {
-            description
-        };
+    const matchTypes = output.description.match(/\s*{(.+?)}\s*/);
+    if(matchTypes) {
+        output.types = matchTypes[1].split('|').map(ii => ii.trim());
+        output.description = output.description.replace(matchTypes[0], '').trim();
     }
 
-    const types = matches[1];
-    const defaultvalue = matches[3];
-
-    var output = {
-        description: output.description.replace(matches[0], '').trim()
-    };
-
-    if(types) {
-        output.types = types.split('|').map(ii => ii.trim());
-    }
-
-    if(defaultvalue) {
-        output.defaultvalue = defaultvalue;
+    const matchDefaultvalue = output.description.match(/\s*\[=(.+?)\]\s*/);
+    if(matchDefaultvalue) {
+        output.defaultvalue = matchDefaultvalue[1];
+        output.description = output.description.replace(matchDefaultvalue[0], '').trim();
     }
 
     return output;

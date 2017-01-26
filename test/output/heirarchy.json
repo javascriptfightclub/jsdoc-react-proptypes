@@ -1,49 +1,4 @@
 {
-    "typedef": {
-        "heading": "Typedefs",
-        "doclets": [
-            {
-                "meta": {
-                    "range": [
-                        1716,
-                        1792
-                    ],
-                    "filename": "ES6Component.jsx",
-                    "lineno": 21,
-                    "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
-                    "code": {}
-                },
-                "params": [
-                    {
-                        "type": {
-                            "names": [
-                                "Object"
-                            ],
-                            "typedefs": {}
-                        },
-                        "optional": true,
-                        "defaultvalue": "\"yes\"",
-                        "description": "<p>Whut</p>",
-                        "name": "poo"
-                    }
-                ],
-                "longname": "Poo",
-                "name": "Poo",
-                "doclets": [],
-                "scope": "global",
-                "kind": "typedef",
-                "___s": true,
-                "___id": "T000002R000011",
-                "type": {
-                    "names": [
-                        "function"
-                    ]
-                },
-                "description": "<p>Oh yeah</p>",
-                "comment": "/**\n * Oh yeah\n * @callback Poo\n *\n * @param {Object} [poo = \"yes\"] Whut\n */"
-            }
-        ]
-    },
     "module": {
         "heading": "Modules",
         "doclets": [
