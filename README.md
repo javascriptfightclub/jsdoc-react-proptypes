@@ -53,7 +53,7 @@ Nothing.defaultProps = {
 };
 ```
 
-You get all React's tags and the logic to transform them into jsdoc as part of this. Over time it'd be cool to add other kinds of prop types like [react-immutable-proptypes](https://github.com/HurricaneJames/react-immutable-proptypes). Once added you'll get that for free. Yes, free. Wow. On the flip side who would really even consider a package called `jsdoc-react-proptypes-plugin-react-immutable-proptypes` anyway, even if it is the general flavour of the js dev ecosystem.
+You get all React's tags and the logic to transform them into jsdoc as part of this. Over time it'd be cool to add other kinds of prop types like [react-immutable-proptypes](https://github.com/HurricaneJames/react-immutable-proptypes). Once added you'll get that for free. Yes, free. Wow. On the flip side who would really even consider a package called `jsdoc-react-proptypes-plugin-react-immutable-proptypes` anyway.
 
 Also the default props thing doesn't work with React's ES5 style of going `getDefaultProps() => { return {}; }`, because I didn't bother. PRs are welcome. But really just use ES6.
 
@@ -63,7 +63,7 @@ Also the default props thing doesn't work with React's ES5 style of going `getDe
 
 ## How to do the thing
 
-Add with `npm install jsdoc-react-proptypes --save-dev`, then in your `conf.json` add:
+In your `conf.json` add:
 
 ```
 "plugins": [
@@ -71,14 +71,16 @@ Add with `npm install jsdoc-react-proptypes --save-dev`, then in your `conf.json
 ],
 ```
 
+You will know what I'm talking about, because you are using jsdoc. If you are not using jsdoc, then I'm not sure I'd recommend it, but it works better than not having it I guess.
+
 ## Dev
 
 If you want to dev this then I welcome it. Also I'm truly sorry. You'll know what I mean.
 
-`npm run build` to build.
-`npm run dev` to build automatically with watching.
-`npm run test` to run all the tests.
-Bulk of the logic is in `src/plugin`.
+ - `npm run build` to build.
+ - `npm run dev` to build automatically with watching.
+ - `npm run test` to run all the tests.
+ - Bulk of the logic is in `src/plugin`.
 
 ## License
 
