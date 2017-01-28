@@ -1,5 +1,8 @@
-// I DONT NORMALLY CODE LIKE THIS I SWEAR
-// ITS ALL VERY ODD
+
+
+// YES ID DO I NORMALLY CODE LIKE THIS
+
+
 import ReactDictionary from './dictionaries/react';
 
 // all the things we might try to match
@@ -11,6 +14,22 @@ var astNodeMap = {};
 var docletMap = {};
 var lastPropDoclet;
 var lastES5Doclet;
+
+const DEFAULTPROPCOMMENT = "/** hello there this is a default prop */";
+
+// climb inside of the various animals in the safe way
+function getInThere(thing, path) {
+    var out = thing;
+    var apathy = path.split('.');
+
+    for(var i =0 ; i < apathy.length; i ++ ) {
+        if(!out) {
+            return null;
+        }
+        out = out[apathy[i]];
+    }
+    return out;
+}
 
 // not sure what this does
 function getVariableNameOrSomething(doclet) {
@@ -75,7 +94,7 @@ function mildPropChainParsing(node, lookFor) {
             }
             // add stuff to the wrong end of the array because the AST is kind of topsy turvy
             chain.unshift({
-                name: callee && callee.property && callee.property.name,
+                name: getInThere(callee, 'property.name'),
                 args
             });
 
@@ -90,7 +109,7 @@ function mildPropChainParsing(node, lookFor) {
         } = value;
 
         chain.unshift({
-            name: property && property.name
+            name: getInThere(property, 'name')
         });
 
         goDeeper(object, chain);
@@ -162,9 +181,18 @@ function rangeWithin(parent, child) {
     return thisStart > propStart && thisEnd < propEnd;
 }
 
+function defaultPlops(node, e) {
+    if(getInThere(node, 'parent.parent.left.property.name') == 'defaultProps' && node.type == "Property") {
+        e.event = "symbolFound";
+        e.comment = DEFAULTPROPCOMMENT;
+    }
+}
+
 // jsdoc weird hooks
 const astNodeVisitor = {
     visitNode: (node, e, parser, currentSourceName) => {
+        defaultPlops(node, e);
+
         // we dont crae about these ones, just bail
         if(!e || e.comment == '@undocumented' || e.event != 'symbolFound') {
             return;
@@ -194,7 +222,7 @@ const handlers = {
             lastPropDoclet = doclet;
 
             // found prop types, start collecting information for the jsdoc prop...
-            const name = doclet.meta && doclet.meta.code && doclet.meta.code.name;
+            const name = getInThere(doclet, 'meta.code.name');
             //console.log(">>>>>>>>>>", name);
 
             const {
@@ -228,10 +256,16 @@ const handlers = {
             return;
         }
 
+        // maybe it s a default prop?! Lets looks and see!
+        if(doclet.comment == DEFAULTPROPCOMMENT) {
+            console.log(doclet);
+            return;
+        }
+
         // is doclet's source code range is within that of last propType, this is a sub-prop doclet...
         if(lastPropDoclet && rangeWithin(lastPropDoclet, doclet)) {
-            const name = doclet.meta && doclet.meta.code && doclet.meta.code.name;
-            const lastPropName = lastPropDoclet.meta && lastPropDoclet.meta.code && lastPropDoclet.meta.code.name;
+            const name = getInThere(doclet, 'meta.code.name');
+            const lastPropName = getInThere(lastPropDoclet, 'meta.code.name');
 
             const fuck = getPropForNode(node, {
                 name: `${lastPropName}.${name}`,
@@ -244,14 +278,8 @@ const handlers = {
             return;
         }
 
-        // STUPID SAFE BABY STEPS
-        // BABY STEPS
-        if(node
-            && node.init
-            && node.init.callee
-            && node.init.callee.property
-            && node.init.callee.property.name == 'createClass' // we made it, phew, time for a nap
-        ) {
+        // no longer requires baby steps or a subsequent nap
+        if(getInThere(node, 'init.callee.property.name') == 'createClass') {
             lastES5Doclet = doclet;
         }
     }
