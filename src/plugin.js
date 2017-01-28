@@ -1,3 +1,4 @@
+// THIS IS AN APOLOGY
 
 import ReactDictionary from './dictionaries/react';
 
@@ -260,9 +261,12 @@ const handlers = {
             return;
         }
 
-        // maybe it s a default prop?! Lets looks and see!
+        // uh, well, maybe it s a default prop?! Lets looks and see!
         if(doclet.comment == DEFAULTPROPCOMMENT) {
             var defaultvalue = getInThere(doclet, 'meta.code.value');
+            // values here have weird types, most are strings but Literals are not, so fix them up.
+            // We want string representations of the syntax required to WRITE each of these
+            // so string values should have quotes either end of a string, numbers should be strings etc.
             if(getInThere(doclet, 'meta.code.type') == "Literal") {
                 const isString = typeof defaultvalue == "string";
                 defaultvalue = isString ? `"${defaultvalue}"` : `${defaultvalue}`;
@@ -276,6 +280,8 @@ const handlers = {
         }
 
         // is doclet's source code range is within that of last propType, this is a sub-prop doclet...
+        // pretty sure it would be possible and way better to check through multiple parents of the AST node
+        // to work this out, but I can't be fucked
         if(lastPropDoclet && rangeWithin(lastPropDoclet, doclet)) {
             const name = getInThere(doclet, 'meta.code.name');
             const lastPropName = getInThere(lastPropDoclet, 'meta.code.name');

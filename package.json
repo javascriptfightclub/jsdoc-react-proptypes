@@ -58,7 +58,8 @@
     "react": "^15.3.2",
     "react-addons-test-utils": "^15.0.0",
     "react-dom": "^15.3.2",
-    "sinon": "^1.17.6"
+    "sinon": "^1.17.6",
+    "jsdonk": "^0.3.3"
   },
   "main": "lib/index.js",
   "engines": {
@@ -76,7 +77,6 @@
     ]
   },
   "dependencies": {
-    "immutable": "^3.8.1",
-    "jsdonk": "^0.3.3"
+    "immutable": "^3.8.1"
   }
 }

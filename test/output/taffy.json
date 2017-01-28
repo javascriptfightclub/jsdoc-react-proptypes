@@ -256,7 +256,6 @@
                 "description": "<p>Shapes can also have documented properties</p>"
             },
             {
-                "optional": false,
                 "type": {
                     "names": [
                         "number"
@@ -266,7 +265,6 @@
                 "description": "<p>Like these</p>"
             },
             {
-                "optional": false,
                 "type": {
                     "names": [
                         "string"
@@ -276,7 +274,6 @@
                 "description": "<p>You can chain any of the above with <code>isRequired</code> to make sure a warning is shown if the prop isn't provided.</p>"
             },
             {
-                "optional": false,
                 "type": {
                     "names": [
                         "*"
@@ -1275,14 +1272,217 @@
         "comment": "/** A boolean */"
     },
     {
+        "meta": {
+            "range": [
+                1571,
+                2107
+            ],
+            "filename": "Nothing.jsx",
+            "lineno": 18,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100001296",
+                "name": "Nothing",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "longname": "Nothing",
+        "name": "Nothing",
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "boolean"
+                    ]
+                },
+                "name": "shout",
+                "description": "<p>A random required boolean prop</p>"
+            },
+            {
+                "optional": true,
+                "type": {
+                    "names": [
+                        "Array.<string>"
+                    ]
+                },
+                "name": "yellees",
+                "description": "<p>An array of names of people to yell at</p>",
+                "defaultvalue": "[]"
+            }
+        ],
+        "scope": "global",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000119",
+        "description": "<p>Nothing here.</p>",
+        "comment": "/**\n * Nothing here.\n */"
+    },
+    {
+        "meta": {
+            "range": [
+                2178,
+                2216
+            ],
+            "filename": "Nothing.jsx",
+            "lineno": 43,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100001362",
+                "name": "shout",
+                "type": "MemberExpression",
+                "value": "React.PropTypes.bool.isRequired"
+            }
+        },
+        "longname": "Nothing.propTypes.shout",
+        "name": "shout",
+        "memberof": "Nothing.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000124",
+        "description": "<p>A random required boolean prop</p>",
+        "comment": "/** A random required boolean prop */"
+    },
+    {
+        "meta": {
+            "range": [
+                2273,
+                2329
+            ],
+            "filename": "Nothing.jsx",
+            "lineno": 46,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100001370",
+                "name": "yellees",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "longname": "Nothing.propTypes.yellees",
+        "name": "yellees",
+        "memberof": "Nothing.propTypes",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000125",
+        "description": "<p>An array of names of people to yell at</p>",
+        "comment": "/** An array of names of people to yell at */"
+    },
+    {
+        "meta": {
+            "range": [
+                2363,
+                2374
+            ],
+            "filename": "Nothing.jsx",
+            "lineno": 50,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100001388",
+                "name": "yellees",
+                "type": "ArrayExpression",
+                "value": "[]"
+            }
+        },
+        "longname": "Nothing.defaultProps.yellees",
+        "name": "yellees",
+        "memberof": "Nothing.defaultProps",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000127",
+        "description": "<p>hello there this is a default prop</p>",
+        "comment": "/** hello there this is a default prop */"
+    },
+    {
+        "meta": {
+            "range": [
+                242,
+                360
+            ],
+            "filename": "NothingAgain.jsx",
+            "lineno": 11,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100001409",
+                "name": "NothingAgain",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "props"
+                ]
+            }
+        },
+        "params": [],
+        "longname": "NothingAgain",
+        "name": "NothingAgain",
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "boolean"
+                    ]
+                },
+                "description": "<p>A random required boolean prop</p>",
+                "name": "shout"
+            },
+            {
+                "type": {
+                    "names": [
+                        "Array.<string>"
+                    ]
+                },
+                "optional": true,
+                "defaultvalue": "[]",
+                "description": "<p>An array of names of people to yell at</p>",
+                "name": "yellees"
+            }
+        ],
+        "scope": "global",
+        "kind": "function",
+        "___s": true,
+        "___id": "T000002R000130",
+        "description": "<p>Nothing here.</p>",
+        "comment": "/**\n * Nothing here.\n * @prop {boolean} shout A random required boolean prop\n * @prop {Array<string>} [yellees = []] An array of names of people to yell at\n */"
+    },
+    {
+        "meta": {
+            "range": [
+                532,
+                543
+            ],
+            "filename": "NothingAgain.jsx",
+            "lineno": 25,
+            "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+            "code": {
+                "id": "astnode100001453",
+                "name": "yellees",
+                "type": "ArrayExpression",
+                "value": "[]"
+            }
+        },
+        "longname": "NothingAgain.defaultProps.yellees",
+        "name": "yellees",
+        "memberof": "NothingAgain.defaultProps",
+        "scope": "static",
+        "kind": "member",
+        "___s": true,
+        "___id": "T000002R000135",
+        "description": "<p>hello there this is a default prop</p>",
+        "comment": "/** hello there this is a default prop */"
+    },
+    {
         "kind": "package",
         "longname": "package:undefined",
         "files": [
             "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src/ES5Component.jsx",
             "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src/ES6Component.jsx",
-            "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src/ModuleComponent.jsx"
+            "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src/ModuleComponent.jsx",
+            "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src/Nothing.jsx",
+            "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src/NothingAgain.jsx"
         ],
-        "___id": "T000002R000102",
+        "___id": "T000002R000137",
         "___s": true
     }
 ]

@@ -57,7 +57,7 @@ const PropTypes = {
         prop.type.names.push("Object");
     },
     isRequired: (prop) => {
-        prop.optional = false;
+        delete prop.optional;
     }
 };
 

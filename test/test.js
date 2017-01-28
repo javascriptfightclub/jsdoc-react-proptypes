@@ -6,6 +6,8 @@ const taffy = fromJS(JSON.parse(fs.readFileSync("output/taffy.json")));
 const es6 = taffy.find(ii => ii.get('longname') == 'ES6Component');
 const es5 = taffy.find(ii => ii.get('longname') == 'ES5Component');
 const mod = taffy.find(ii => ii.get('longname') == 'module:Module~ModuleComponent');
+const nothing = taffy.find(ii => ii.get('longname') == 'Nothing');
+const nothingAgain = taffy.find(ii => ii.get('longname') == 'NothingAgain');
 
 function getProp(doclet, propName, match) {
     const prop = doclet
@@ -257,7 +259,7 @@ test('ES6 optionalObjectWithShape prop is documented correctly', tt => {
             description: "<p>Shapes can also have documented properties</p>"
         },
         {
-            optional: false,
+
             type: {
                 names: [
                     "number"
@@ -278,7 +280,6 @@ test('ES6 requiredString prop is documented correctly', tt => {
     const prop = {
         name: "requiredString",
         description: "<p>You can chain any of the above with <code>isRequired</code> to make sure a warning is shown if the prop isn't provided.</p>",
-        optional: false,
         type: {
             names: [
                 "string"
@@ -292,7 +293,6 @@ test('ES6 requiredAny prop is documented correctly', tt => {
     const prop = {
         name: "requiredAny",
         description: "<p>A value of any data type</p>",
-        optional: false,
         type: {
             names: [
                 "*"
@@ -424,4 +424,14 @@ test('Prop for component in module is documented correctly', tt => {
         }
     };
     tt.deepEqual(getProp(mod, 'optionalBool'), prop);
+});
+
+//
+// Nothing
+//
+
+test('Nothing example on readme is fully working, avoiding potential embarassment', tt => {
+    console.log(nothing.get('properties'));
+    console.log(nothingAgain.get('properties'));
+    tt.true(nothing.get('properties').equals(nothingAgain.get('properties')));
 });
