@@ -14,14 +14,14 @@ class ModuleComponent extends Component {
     }
 }
 
+// default props before proptypes
+ModuleComponent.defaultProps = {
+    optionalBool: false
+};
+
 ModuleComponent.propTypes = {
   /** A boolean */
   optionalBool: React.PropTypes.bool
 };
-
-/*
-ModuleComponent.defaultProps = {
-};
-*/
 
 export default ModuleComponent;

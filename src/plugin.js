@@ -1,12 +1,8 @@
 
-
-// YES ID DO I NORMALLY CODE LIKE THIS
-
-
 import ReactDictionary from './dictionaries/react';
 
 // all the things we might try to match
-// gotta add immutabl recursive
+// gotta add immutable proptypes
 var dictionaries = [].concat(ReactDictionary);
 
 // remember stuff
@@ -31,12 +27,11 @@ function getInThere(thing, path) {
     return out;
 }
 
-// not sure what this does
-function getVariableNameOrSomething(doclet) {
+function getBottomestMemberof(doclet) {
     return doclet.memberof && doclet.memberof.split(".").slice(-1);
 }
 
-function kindOfParentNameThingIGuess(doclet) {
+function getToppestMemberof(doclet) {
     return doclet.memberof && doclet.memberof.split(".").slice(0, -1);
 }
 
@@ -131,7 +126,7 @@ function findDictionaryMatchingChain(propChain, dictionaries) {
             if(propChain[j].name == dict.name) {
                 // so now we know which dictionary to use
                 return {
-                    dict:dict.dict,//dictdictdictdictdictdictdictdictdictdictdictdictdictdictdict
+                    dict:dict.dict,
                     propChain: propChain.slice(j + 1)
                 };
             }
@@ -140,9 +135,9 @@ function findDictionaryMatchingChain(propChain, dictionaries) {
     return null;
 }
 
-function MUTATEPROPSwithadictionary(prop, propChain, dict) {
-    for(var iiii = 0; iiii < propChain.length; iiii++) {
-        const {name, args} = propChain[iiii];
+function useTheDictionary(prop, propChain, dict) {
+    for(var i = 0; i < propChain.length; i++) {
+        const {name, args} = propChain[i];
         dict[name] && dict[name](prop, args);
     }
 }
@@ -157,22 +152,33 @@ function getPropForNode(node, propMerge = {}) {
 
     const propChain = mildPropChainParsing(node, 'PropTypes');
     // check if the prop chain matches a dictionary we have
-    const cool = findDictionaryMatchingChain(propChain, dictionaries);
-    if(cool) {
-        MUTATEPROPSwithadictionary(prop, cool.propChain, cool.dict);
+    const gotMyselfADictionary = findDictionaryMatchingChain(propChain, dictionaries);
+    if(gotMyselfADictionary) {
+        useTheDictionary(prop, gotMyselfADictionary.propChain, gotMyselfADictionary.dict);
     }
     return prop;
 }
 
-function finallyAddPropToComponentThisIsShit(longname, prop) {
+function addOrModifyThePropOnTheComponent(longname, prop) {
     const theComponent = docletMap[longname];
     if(!theComponent || !theComponent.doclet) {
         return;
     }
-    if(!theComponent.doclet.properties) {
-        theComponent.doclet.properties = [];
+    const {doclet} = theComponent;
+    if(!doclet.properties) {
+        doclet.properties = [];
     }
-    theComponent.doclet.properties.push(prop);
+    const {name} = prop;
+    var propMap = {};
+    doclet.properties.forEach((pp, key) => {
+        propMap[pp.name] = key;
+    });
+
+    if(propMap.hasOwnProperty(prop.name)) {
+        Object.assign(doclet.properties[propMap[prop.name]], prop);
+    } else {
+        doclet.properties.push(prop);
+    }
 }
 
 function rangeWithin(parent, child) {
@@ -181,44 +187,42 @@ function rangeWithin(parent, child) {
     return thisStart > propStart && thisEnd < propEnd;
 }
 
-function defaultPlops(node, e) {
+function markDefaultProps(node, e) {
     if(getInThere(node, 'parent.parent.left.property.name') == 'defaultProps' && node.type == "Property") {
         e.event = "symbolFound";
         e.comment = DEFAULTPROPCOMMENT;
     }
 }
 
-// jsdoc weird hooks
+// jsdoc hooks
 const astNodeVisitor = {
     visitNode: (node, e, parser, currentSourceName) => {
-        defaultPlops(node, e);
+        markDefaultProps(node, e);
 
-        // we dont crae about these ones, just bail
+        // we dont care about these ones, just bail
         if(!e || e.comment == '@undocumented' || e.event != 'symbolFound') {
             return;
         }
-        // LETS REMEMBER ALMOST EVERYTHING
-        // BECAUSE WHY NOT
-        // CANT WORK OUT A BETTER WAY
+        // lets remember almost everything
+        // because why not
+        // cant work out a better way
         astNodeMap[e.id] = node;
     }
 };
 
-// more weird jsdoc hooks
+// more jsdoc hooks
 const handlers = {
     newDoclet: (e) => {
         if(!e || !e.doclet || e.doclet.undocumented) {
-            // go home
             return;
         }
 
-        // GET THE NODE OUT OF THAT MASSIVE LIST WE GOT GOING ON
         const {doclet} = e;
         docletMap[doclet.longname] = e;
         const node = astNodeMap[e.doclet.meta.code.id];
 
         // if doclet is a child of propTypes, this is a prop doclet...
-        if(getVariableNameOrSomething(doclet) == 'propTypes') {
+        if(getBottomestMemberof(doclet) == 'propTypes') {
             lastPropDoclet = doclet;
 
             // found prop types, start collecting information for the jsdoc prop...
@@ -248,9 +252,9 @@ const handlers = {
                 // bother checking if its in the same file
                 // like this could happen way after the last es5 and what if the char ranges line up
                 if(lastES5Doclet && rangeWithin(lastES5Doclet, doclet)) {
-                    finallyAddPropToComponentThisIsShit(lastES5Doclet.longname, prop);
+                    addOrModifyThePropOnTheComponent(lastES5Doclet.longname, prop);
                 } else {
-                    finallyAddPropToComponentThisIsShit(kindOfParentNameThingIGuess(doclet), prop);
+                    addOrModifyThePropOnTheComponent(getToppestMemberof(doclet), prop);
                 }
             }
             return;
@@ -258,7 +262,16 @@ const handlers = {
 
         // maybe it s a default prop?! Lets looks and see!
         if(doclet.comment == DEFAULTPROPCOMMENT) {
-            console.log(doclet);
+            var defaultvalue = getInThere(doclet, 'meta.code.value');
+            if(getInThere(doclet, 'meta.code.type') == "Literal") {
+                const isString = typeof defaultvalue == "string";
+                defaultvalue = isString ? `"${defaultvalue}"` : `${defaultvalue}`;
+            }
+            var prop = {
+                name: doclet.name,
+                defaultvalue
+            };
+            addOrModifyThePropOnTheComponent(getToppestMemberof(doclet), prop);
             return;
         }
 
@@ -273,7 +286,7 @@ const handlers = {
             });
 
             if(fuck) {
-                finallyAddPropToComponentThisIsShit(kindOfParentNameThingIGuess(lastPropDoclet), fuck);
+                addOrModifyThePropOnTheComponent(getToppestMemberof(lastPropDoclet), fuck);
             }
             return;
         }

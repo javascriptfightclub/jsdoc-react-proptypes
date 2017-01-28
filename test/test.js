@@ -59,11 +59,12 @@ test('ES6 optionalFunc prop is documented correctly (it adds no types)', tt => {
     tt.deepEqual(getProp(es6, 'optionalFunc'), prop);
 });
 
-test('ES6 optionalNumber prop is documented correctly', tt => {
+test('ES6 optionalNumber prop is documented correctly, with a defaultvalue', tt => {
     const prop = {
         name: "optionalNumber",
         description: "<p>A number</p>",
         optional: true,
+        defaultvalue: '46',
         type: {
             names: [
                 "number"
@@ -101,11 +102,12 @@ test('ES6 optionalObject prop is documented correctly', tt => {
     tt.deepEqual(getProp(es6, 'optionalObject'), prop);
 });
 
-test('ES6 optionalString prop is documented correctly', tt => {
+test('ES6 optionalString prop is documented correctly with a defaultvalue', tt => {
     const prop = {
         name: "optionalString",
         description: "<p>A string</p>",
         optional: true,
+        defaultvalue: '"default string"',
         type: {
             names: [
                 "string"
@@ -203,11 +205,12 @@ test('ES6 optionalUnion prop is documented correctly', tt => {
 });
 
 
-test('ES6 optionalArrayOf prop is documented correctly', tt => {
+test('ES6 optionalArrayOf prop is documented correctly, with a defaultvalue', tt => {
     const prop = {
         name: "optionalArrayOf",
         description: "<p>An array of a certain type</p>",
         optional: true,
+        defaultvalue: '[1,2,3,4]',
         type: {
             names: [
                 "Array.<number>",
@@ -413,6 +416,7 @@ test('Prop for component in module is documented correctly', tt => {
         name: "optionalBool",
         description: "<p>A boolean</p>",
         optional: true,
+        defaultvalue: 'false',
         type: {
             names: [
                 "boolean"

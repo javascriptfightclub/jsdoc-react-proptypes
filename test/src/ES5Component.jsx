@@ -9,11 +9,11 @@ var ES5Component = React.createClass({
     firstName: React.PropTypes.string
   },
 
-  /*getDefaultProps: function() {
+  getDefaultProps: function() {
     return {
       firstName: 'Mary'
     };
-  },*/
+  },
 
   render() {
     return <div>Nothing here</div>;

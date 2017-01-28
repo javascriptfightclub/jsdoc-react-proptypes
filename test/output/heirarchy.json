@@ -6,8 +6,8 @@
                 "comment": "/**\n * @module Module\n */",
                 "meta": {
                     "range": [
-                        1716,
-                        1741
+                        1718,
+                        1743
                     ],
                     "filename": "ModuleComponent.jsx",
                     "lineno": 21,
@@ -17,7 +17,7 @@
                 "kind": "module",
                 "name": "Module",
                 "longname": "module:Module",
-                "___id": "T000002R000066",
+                "___id": "T000002R000071",
                 "___s": true,
                 "doclets": []
             }
