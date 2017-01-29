@@ -10,7 +10,6 @@ var dictionaries = [].concat(ReactDictionary);
 var astNodeMap = {};
 var docletMap = {};
 var lastPropDoclet;
-var lastES5Doclet;
 
 const DEFAULTPROPCOMMENT = "/** hello there this is a default prop */";
 
@@ -29,11 +28,11 @@ function getInThere(thing, path) {
 }
 
 function getBottomestMemberof(doclet) {
-    return doclet.memberof && doclet.memberof.split(".").slice(-1);
+    return doclet.memberof && doclet.memberof.split(".").slice(-1)[0];
 }
 
 function getToppestMemberof(doclet) {
-    return doclet.memberof && doclet.memberof.split(".").slice(0, -1);
+    return doclet.memberof && doclet.memberof.split(".")[0];
 }
 
 function parseArgmuents(aaargh) {
@@ -169,6 +168,7 @@ function addOrModifyThePropOnTheComponent(longname, prop) {
     if(!doclet.properties) {
         doclet.properties = [];
     }
+
     const {name} = prop;
     var propMap = {};
     doclet.properties.forEach((pp, key) => {
@@ -245,18 +245,7 @@ const handlers = {
                 if(defaultvalue) {
                     prop.defaultvalue = defaultvalue;
                 }
-
-                // jsdoc loses the plot with ES5, manually remember the last time we saw one
-                // and if this new doclet is in the range of that last es5 class
-                // then add the prop to it
-                // probably has the ability to cause extremely rare bugs because it doesn't
-                // bother checking if its in the same file
-                // like this could happen way after the last es5 and what if the char ranges line up
-                if(lastES5Doclet && rangeWithin(lastES5Doclet, doclet)) {
-                    addOrModifyThePropOnTheComponent(lastES5Doclet.longname, prop);
-                } else {
-                    addOrModifyThePropOnTheComponent(getToppestMemberof(doclet), prop);
-                }
+                addOrModifyThePropOnTheComponent(getToppestMemberof(doclet), prop);
             }
             return;
         }
@@ -275,6 +264,7 @@ const handlers = {
                 name: doclet.name,
                 defaultvalue
             };
+
             addOrModifyThePropOnTheComponent(getToppestMemberof(doclet), prop);
             return;
         }
@@ -295,11 +285,6 @@ const handlers = {
                 addOrModifyThePropOnTheComponent(getToppestMemberof(lastPropDoclet), fuck);
             }
             return;
-        }
-
-        // no longer requires baby steps or a subsequent nap
-        if(getInThere(node, 'init.callee.property.name') == 'createClass') {
-            lastES5Doclet = doclet;
         }
     }
 };

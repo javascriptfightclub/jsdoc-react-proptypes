@@ -8,6 +8,8 @@ const es5 = taffy.find(ii => ii.get('longname') == 'ES5Component');
 const mod = taffy.find(ii => ii.get('longname') == 'module:Module~ModuleComponent');
 const nothing = taffy.find(ii => ii.get('longname') == 'Nothing');
 const nothingAgain = taffy.find(ii => ii.get('longname') == 'NothingAgain');
+const nothingFunctional = taffy.find(ii => ii.get('longname') == 'NothingFunctional');
+const nothingFunctionalAgain = taffy.find(ii => ii.get('longname') == 'NothingFunctionalAgain');
 
 function getProp(doclet, propName, match) {
     const prop = doclet
@@ -390,24 +392,6 @@ test('ES6 customJsdocTypeWithDefault2 prop is documented correctly', tt => {
 });
 
 //
-// ES5
-//
-
-test('ES5 prop is documented correctly', tt => {
-    const prop = {
-        name: "firstName",
-        description: "<p>Name string</p>",
-        optional: true,
-        type: {
-            names: [
-                "string"
-            ]
-        }
-    };
-    tt.deepEqual(getProp(es5, 'firstName'), prop);
-});
-
-//
 // Module
 //
 
@@ -431,7 +415,13 @@ test('Prop for component in module is documented correctly', tt => {
 //
 
 test('Nothing example on readme is fully working, avoiding potential embarassment', tt => {
-    console.log(nothing.get('properties'));
-    console.log(nothingAgain.get('properties'));
     tt.true(nothing.get('properties').equals(nothingAgain.get('properties')));
+});
+
+//
+// NothingFunctional (function component testing)
+//
+
+test('NothingFunctional example on readme is fully working, avoiding potential embarassment', tt => {
+    tt.true(nothingFunctional.get('properties').equals(nothingFunctionalAgain.get('properties')));
 });

@@ -1,20 +1,18 @@
 /**
- * Nothing here.
+ * NothingFunctional here.
  * @prop {boolean} shout A random required boolean prop
  * @prop {Array<string>} [yellees = []] An array of names of people to yell at
  */
-class NothingAgain extends Component {
-    render() {
-        return <div>Nothing</div>;
-    }
+function NothingFunctionalAgain(props) {
+    return <div>Nothing</div>;
 }
 
-NothingAgain.propTypes = {
+NothingFunctionalAgain.propTypes = {
   shout: React.PropTypes.bool.isRequired,
   yellees: React.PropTypes.arrayOf(React.PropTypes.string)
 };
 
-NothingAgain.defaultProps = {
+NothingFunctionalAgain.defaultProps = {
     yellees: []
 };
-export default NothingAgain;
+export default NothingFunctionalAgain;
