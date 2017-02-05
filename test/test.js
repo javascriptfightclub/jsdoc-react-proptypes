@@ -10,6 +10,7 @@ const nothing = taffy.find(ii => ii.get('longname') == 'Nothing');
 const nothingAgain = taffy.find(ii => ii.get('longname') == 'NothingAgain');
 const nothingFunctional = taffy.find(ii => ii.get('longname') == 'NothingFunctional');
 const nothingFunctionalAgain = taffy.find(ii => ii.get('longname') == 'NothingFunctionalAgain');
+const stat = taffy.find(ii => ii.get('longname') == 'StaticMemberComponent');
 
 function getProp(doclet, propName, match) {
     const prop = doclet
@@ -424,4 +425,23 @@ test('Nothing example on readme is fully working, avoiding potential embarassmen
 
 test('NothingFunctional example on readme is fully working, avoiding potential embarassment', tt => {
     tt.true(nothingFunctional.get('properties').equals(nothingFunctionalAgain.get('properties')));
+});
+
+//
+// Static member properties
+//
+
+test('Prop for static memeber component is documented correctly', tt => {
+    const prop = {
+        name: "optionalBool",
+        description: "<p>A boolean</p>",
+        optional: true,
+        defaultvalue: 'false',
+        type: {
+            names: [
+                "boolean"
+            ]
+        }
+    };
+    tt.deepEqual(getProp(stat, 'optionalBool'), prop);
 });

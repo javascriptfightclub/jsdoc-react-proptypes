@@ -21,7 +21,6 @@
   ],
   "babel": {
     "extensions": ["js", "es6", "jsx"],
-    "presets": ["blueflag"],
-    "plugins": ["transform-flow-strip-types"]
+    "presets": ["blueflag"]
   }
 }

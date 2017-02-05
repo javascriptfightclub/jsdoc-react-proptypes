@@ -6,18 +6,18 @@
                 "comment": "/**\n * @module Module\n */",
                 "meta": {
                     "range": [
-                        1718,
-                        1743
+                        969,
+                        994
                     ],
                     "filename": "ModuleComponent.jsx",
-                    "lineno": 21,
-                    "path": "/mnt/c/Users/Damienn/Documents/make/web/jsdoc-react-proptypes/test/src",
+                    "lineno": 33,
+                    "path": "/Users/damienclarke/projects/jsdoc-react-proptypes/test/src",
                     "code": {}
                 },
                 "kind": "module",
                 "name": "Module",
                 "longname": "module:Module",
-                "___id": "T000002R000062",
+                "___id": "T000002R000056",
                 "___s": true,
                 "doclets": []
             }

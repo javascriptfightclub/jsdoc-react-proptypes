@@ -1,4 +1,3 @@
 {
-    "presets": ["blueflag"],
-    "plugins": ["babel-plugin-transform-class-properties"]
+    "presets": ["blueflag"]
 }
