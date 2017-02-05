@@ -51,6 +51,50 @@ Nothing.defaultProps = {
 };
 ```
 
+Also works with ES6 class components:
+
+```
+class NothingAgain extends Component {
+    render() {
+        return <div>Nothing again</div>;
+    }
+}
+
+NothingAgain.propTypes = {
+  shout: React.PropTypes.bool.isRequired,
+  yellees: React.PropTypes.arrayOf(React.PropTypes.string)
+};
+
+NothingAgain.defaultProps = {
+    yellees: []
+};
+
+```
+
+And ES6 class components with static member variables, assuming you've got all your babels good.
+
+```
+class NothingOnceMore extends Component {
+
+    static propTypes = {
+      /** A random required boolean prop */
+      shout: React.PropTypes.bool.isRequired,
+
+      /** An array of names of people to yell at */
+      yellees: React.PropTypes.arrayOf(React.PropTypes.string)
+    };
+
+    static defaultProps = {
+        yellees: []
+    };
+
+    render() {
+        return <div>Nothing once more</div>;
+    }
+}
+
+```
+
 You get all React's tags and the logic to transform them into jsdoc as part of this. Over time it'd be cool to add other kinds of prop types like [react-immutable-proptypes](https://github.com/HurricaneJames/react-immutable-proptypes). Once added you'll get that for free. Yes, free. Wow. On the flip side who would really even consider a package called `jsdoc-react-proptypes-plugin-react-immutable-proptypes` anyway.
 
 ## How to get it
