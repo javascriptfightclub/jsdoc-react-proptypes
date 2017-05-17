@@ -220,7 +220,12 @@ const handlers = {
 
         const {doclet} = e;
         docletMap[doclet.longname] = e;
-        const node = astNodeMap[e.doclet.meta.code.id];
+        const id = getInThere(e, 'doclet.meta.code.id');
+        if(!id) {
+            return;
+        }
+
+        const node = astNodeMap[id];
 
         // if doclet is a child of propTypes, this is a prop doclet...
         if(getBottomestMemberof(doclet) == 'propTypes') {
